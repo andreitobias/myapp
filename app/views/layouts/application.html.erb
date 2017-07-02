@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Get more clients</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  </head>
+
+  <body class="bg_image">
+    <div class="container">
+      <div class ="row">
+        <div class="jumbotron">
+          <h1>Get more <h1 id="word">Sales</h1> </h1>
+          <p>Get a Free Custom Report!  </p>
+          <%= render "contacts/form"%>
+        </div>
+      </div>
+      <%= yield %>
+    </div>  
+  </body>
+</html>
