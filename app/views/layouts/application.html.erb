@@ -9,16 +9,47 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   </head>
 
-  <body class="bg_image">
-    <div class="container">
-      <div class ="row">
-        <div class="jumbotron">
-          <h1>Get more <h1 id="word">Sales</h1>
-          <p>Get a Free Custom Report!  </p>
-          <%= render "contacts/form"%>
+  <body class="">
+    <div class="container-fluid ">
+      <section id = "section02" class ="demo">
+        <div class ="row">
+          <div class="jumbotron">
+              <% flash.each do |key, value| %>
+                <%= content_tag :div, value, class: "alert alert-#{key}" %>
+              <%end%> 
+            <h1>Get more <h1 id="word">Sales</h1>
+            <p>Get a Free Custom Report!  </p>
+            <%= render "contacts/form"%>
+            
+          </div>
         </div>
-      </div>
-      <%= yield %>
+      </section>  
+      <!-- Content -->
+      
+        <section id="section02" class="demo">
+        	<a href="#section03"><span></span>More</a>
+        </section>
     </div>  
+      
+    <div class ="container-fluid">
+      <section id = "section03">
+        
+    <!-- testimonial one -->
+      <div class="animation-element slide-left testimonial">
+          <div class="header">
+            <div class="left">
+              <img src="https://drive.google.com/uc?export=download&id=0B7UPM0QugWUjVTdZcktRTWhNamM" />
+            </div>
+            <div class="right">
+              <h3>Johnathon Richard Smith</h3>
+              <h4>CEO / Manager - Auto Incorporated</h4>
+            </div>
+        </div>
+        
+      </section>
+    </div> 
+   
+    <%= yield %>
+
   </body>
 </html>
