@@ -4,23 +4,40 @@
 *{
     font-family: 'Open Sans', sans-serif;
 }
+html, body, .container-fluid{
+	height:100%;
+}
+ a:visited{
+ 	text-decoration:none;
+ }
+a:focus{
+ 	text-decoration:none;
+ 	color:#fff !important;
+ }
+
+label {
+	color:#fff;
+} 
+
+ 
 /*Header*/
 .jumbotron{
   margin-top:12em;
   background-color: transparent !important;
+   text-align: center !important;
 }
 
 .jumbotron h1,p{
   text-align: center;
-  
+  color:#fff;
 }
 .jumbotron h1{
   display:inline;
+  color:#fff !important;
 
 }
-
-.jumbotron{
-   text-align: center !important;
+.jumbotron p{
+  margin: 2em 0 2em 0 !important;
 }
 
 #word{
@@ -28,7 +45,7 @@
 }
 
 .bg_image{
-   background:  linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('1.jpg') no-repeat center center fixed; 
+   background:  linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('4.jpg') no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -46,8 +63,8 @@
 }
 .demo a {
 	position: absolute;
-	bottom: 20px;
-	left: 50%;
+	bottom: -10em;
+	left: 47%;
 	z-index: 2;
 	display: inline-block;
 	-webkit-transform: translate(0, -50%);
@@ -58,8 +75,9 @@
 	text-decoration: none;
 	transition: opacity .3s;
 }
-.demo a:hover {
+.demo a:hover, a:focus, a:visited {
 	opacity: .5;
+	text-decoration: none;
 }
 
 
@@ -112,5 +130,8 @@
 	box-sizing: border-box;
 }
 
-/*Animations*/
+/*Content*/
 
+#section03{
+	margin: 5em;
+}
