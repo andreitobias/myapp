@@ -1,0 +1,33 @@
+<body class="">
+    
+    <div class="container-fluid landing">
+      <div class = "row">
+          <div class ="jumbotron">
+            
+            <div class="col-md-6">
+              
+                <% flash.each do |key, value| %>
+                    <%= content_tag :div, value, class: "alert alert-#{key}" %>
+                  <%end%> 
+                <h1>Get more <h1 id="word">Sales</h1>
+                <p>Get a Free Custom Report!</p>
+                
+            </div>
+            
+          </div>
+          
+          <div class="col-md-6 half">  
+                <%= render "contacts/form"%>
+                 <!-- More Button -->
+          </div>
+        
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <section id="section02" class="demo">
+              	<a href="#section03"><span></span>More</a>
+              </section>
+          </div>    
+        </div>
+    </div>
+    
