@@ -1,33 +1,30 @@
-<body class="">
-    
+
     <div class="container-fluid landing">
-      <div class = "row">
-          <div class ="jumbotron">
-            
-            <div class="col-md-6">
+      <section id = "section02 " class ="demo">
+  
+            <div class ="jumbotron">
               
-                <% flash.each do |key, value| %>
-                    <%= content_tag :div, value, class: "alert alert-#{key}" %>
-                  <%end%> 
-                <h1>Get more <h1 id="word">Sales</h1>
-                <p>Get a Free Custom Report!</p>
+              <div class="col-md-8 col-md-offset-2">
                 
+                  <% flash.each do |key, value| %>
+                      <%= content_tag :div, value, class: "alert alert-#{key}" %>
+                    <%end%> 
+                  <h1>Turn visitors into paying customers by avoiding these 'rookie' mistakes </h1>    
+                  <h2> Are you getting the most out of your website? Get a free <span class="underline">custom</span> conversion audit on your website  </h2>
+                  <p> </p> 
+
+              </div>
+              
             </div>
             
-          </div>
-          
-          <div class="col-md-6 half">  
-                <%= render "contacts/form"%>
-                 <!-- More Button -->
-          </div>
-        
-      </div>
-      <div class="row">
-        <div class="col-md-6 col-md-offset-3">
+            <div class="col-md-8 col-md-offset-2">  
+              <%= render "contacts/form"%>
+               <!-- More Button -->
             <section id="section02" class="demo">
-              	<a href="#section03"><span></span>More</a>
-              </section>
-          </div>    
-        </div>
-    </div>
+            	<a href="#section03"><span></span>More</a>
+            </section>
+         </div>    
+          
+    </section> 
+</div>    
     
