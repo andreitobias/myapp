@@ -31,7 +31,7 @@
 
 .animation-element.slide-left.testimonial {
   float: left;
-  width: 47%;
+  width: 100%;
   margin: 0% 1.5% 3% 1.5%;
   background: #F5F5F5;
   padding: 15px;
@@ -44,12 +44,12 @@ box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
 }
 
 .animation-element.slide-left.testimonial:nth-of-type(odd) {
-  width: 48.5%;
+  width: 90%;
   margin: 0% 1.5% 3.0% 10%;
 }
 
 .animation-element.slide-left.testimonial:nth-of-type(even) {
-  width: 48.5%;
+  width: 90%;
   margin: 0% 0% 3.0% 1.5%;
 }
 
@@ -57,13 +57,20 @@ box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
   float: left;
   width: 100%;
   margin-bottom: 10px;
+  padding: 20px 20px 0 20px;
+
 }
 .animation-element.slide-left.testimonial .left{
   float: left;
   margin-right: 15px;
+  display: inline-block;
+  margin-right: -10em;
 }
 .animation-element.slide-left.testimonial .right{
   float: left;
+  display: inline-block;
+  margin-left: 8em;
+  
 }
 
 .animation-element.slide-left.testimonial img {
@@ -79,6 +86,7 @@ box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
 
 .animation-element.slide-left.testimonial h4 {
   margin: 0px 0px 5px 0px;
+  line-height:24px;
 }
 
 .animation-element.slide-left.testimonial .content {
@@ -90,7 +98,7 @@ box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
 .animation-element.slide-left.testimonial .rating{}
 
 .animation-element.slide-left.testimonial i {
-  color: #aaa;
+  color: #f37846;
   margin-right: 5px;
 }
 

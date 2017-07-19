@@ -1,6 +1,6 @@
 $(function () {
   count = 0;
-  wordsArray = ["Sales", "Clients", "Results"];
+  wordsArray = ["Sales", "Subscriptions", "Results"];
   setInterval(function () {
     count++;
     $("#word").fadeOut(800, function () {
