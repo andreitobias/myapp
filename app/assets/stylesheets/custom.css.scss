@@ -1,5 +1,6 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,800');
 
 *{
     font-family: 'Open Sans', sans-serif;
@@ -9,11 +10,14 @@ html, body, .landing{
 }
 
 .landing{
-background: #f46b45;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to top, #eea849, #f46b45);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to top, #eea849, #f46b45); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-
+background: #de6161;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #2657eb, #de6161);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, rgba(40, 89, 235, 0.43), #de6161), url('3.jpg') no-repeat center center fixed; ; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 
 }
 
@@ -118,7 +122,7 @@ input[type = 'email']{
      box-shadow: none;
 }
 
-.btn-success {
+.submission {
 	  background-color: rgba(92, 184, 92, 0.03) !important;
     border-color: #fff !important;
     margin-top: 3em;
@@ -127,16 +131,38 @@ input[type = 'email']{
     text-transform:uppercase;
 }
 
-.btn-success:focus, .btn-success.focus {
+.submission:focus, .submission.focus {
 	background-color: #fff !important;
 	 border-color: #fff !important;
 	 color: #000 !important;
 }
 
-.btn-success:hover{
+.submission:hover{
 		background-color: #fff !important;
 	 border-color: #fff !important;
 	 color: #000 !important;
+}
+
+.cta {
+	  background-color: transparent !important;
+    border-color: #de6161 !important;
+    margin-bottom: 1em !important;
+    color: #de6161 !important;
+    font-size: 22px !important;
+    font-weight: bold;
+    text-transform:uppercase;
+}
+
+.cta:focus, .cta.focus {
+	background-color: #2657eb !important;
+	 border-color: #2657eb !important;
+	 color: #fff !important;
+}
+
+.cta:hover{
+		background-color: #de6161 !important;
+	 border-color: #2657eb !important;
+	 color: #fff !important;
 }
 
 /*Buttons*/
@@ -253,13 +279,72 @@ ul{
     list-style: none !important;
 }
 /*Font Awesome*/
-.fa{
-    font-size: 5em !important ;
-}
+
 .fa-usd{
     margin-left:20px !important;
 }
+.fa-search{
+  -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+}        
+/*Popup*/
 
+.popup {
+    width:100%;
+    height:100%;
+    display:none;
+    position:fixed;
+    top:0px;
+    left:0px;
+    background:rgba(0,0,0,0.75);
+}
+ 
+/* Inner */
+.popup-inner {
+    max-width:700px;
+    width:90%;
+    padding:40px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    -webkit-transform:translate(-50%, -50%);
+    transform:translate(-50%, -50%);
+    box-shadow:0px 2px 6px rgba(0,0,0,1);
+    border-radius:3px;
+    background:#fff;
+}
+ 
+/* Close Button */
+.popup-close {
+    width:30px;
+    height:30px;
+    padding-top:4px;
+    display:inline-block;
+    position:absolute;
+    top:0px;
+    right:0px;
+    transition:ease 0.25s all;
+    -webkit-transform:translate(50%, -50%);
+    transform:translate(50%, -50%);
+    border-radius:1000px;
+    background:rgba(0,0,0,0.8);
+    font-family:Arial, Sans-Serif;
+    font-size:20px;
+    text-align:center;
+    line-height:100%;
+    color:#fff;
+}
+ 
+.popup-close:hover {
+    -webkit-transform:translate(50%, -50%) rotate(180deg);
+    transform:translate(50%, -50%) rotate(180deg);
+    background:rgba(0,0,0,1);
+    text-decoration:none;
+}
 
  /* Medium Devices, Desktops */
     @media only screen and (min-width : 640px) {
@@ -275,11 +360,11 @@ ul{
           font-size:1.75em !important;
           margin-top: 60px;
         }
-        .btn-success {
+        .submission {
         	font-size:18px !important;
         }
         
-         .btn-success {
+         .submission {
         	margin-top: 6em;
         }
     }
@@ -298,7 +383,7 @@ ul{
           margin-top: 20px;
           line-height:36px;
         }
-        .btn-success {
+        .submission {
         	margin-top: 1em;
         }
         
@@ -333,7 +418,7 @@ ul{
           margin-top: 10em;
         }
         
-        .btn-success{
+        .submission{
               margin-top: 6em;
         }
         .demo a{
