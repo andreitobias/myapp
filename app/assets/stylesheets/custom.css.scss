@@ -13,7 +13,7 @@ html, body, .landing{
 
 background: #de6161;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to left, #2657eb, #de6161);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to left, rgba(40, 89, 235, 0.43), #de6161), url('3.jpg') no-repeat center center fixed; ; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: linear-gradient(to left, rgba(40, 89, 235, 0.75), #de6161), url('3.jpg') no-repeat center center fixed; ; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -53,13 +53,19 @@ label {
    text-align: center !important;
 }
 
-.jumbotron h1,p, h2{
+.jumbotron h1,p{
   text-align: center;
+  color:#fff !important;
+}
+
+.jumbotron h2 {
+   text-align: center;
   color:#fff !important;
 }
 .jumbotron h1{
   display:inline;
   color:#fff !important;
+  text-transform: uppercase;
 
 }
 .jumbotron p{
@@ -122,10 +128,29 @@ input[type = 'email']{
      box-shadow: none;
 }
 
+/*Form Placeholder*/
+::-webkit-input-placeholder { /* Chrome */
+  color: #fff !important;
+    opacity: 0.75;
+
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #fff !important;
+  opacity: 0.75;
+
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #fff !important;
+    opacity: 0.75;
+}
+:-moz-placeholder { /* Firefox 4 - 18 */
+  color: #fff !important;
+  opacity: 0.75;
+}
 .submission {
 	  background-color: rgba(92, 184, 92, 0.03) !important;
     border-color: #fff !important;
-    margin-top: 3em;
+    margin-top: 2.5em;
     font-size: 22px !important;
     font-weight: bold;
     text-transform:uppercase;
@@ -349,71 +374,110 @@ ul{
  /* Medium Devices, Desktops */
     @media only screen and (min-width : 640px) {
         .jumbotron{
-          margin-top:initial;
+          margin-top:7em;
         }
         
         .jumbotron h1 {
-        	font-size:2em !important;
+        	font-size:36px !important;
         	font-weight:bold;
         }
+        
+        
         .jumbotron h2{
-          font-size:1.75em !important;
-          margin-top: 60px;
+          margin-top: 25px;
+          font-size:19px;
         }
+        
+        .jumbotron h3 {
+          font-size:19px;
+        }    
+
         .submission {
         	font-size:18px !important;
         }
         
          .submission {
-        	margin-top: 6em;
+        	margin-top: 3em;
+        }
+        form {
+          margin-top: 0em;
         }
     }
-
+    @media only screen and (min-width : 1000px) {
+      .jumbotron {
+          margin-top: 4em;
+        }
+    }
     /* Large Devices, Wide Screens */
     @media only screen and (min-width : 1200px) {
         .jumbotron{
-          margin-top:initial;
+          margin-top:3em;
+        }
+        .jumbotron h1 {
+        	font-size:35px !important ;
+        }
+       
+         .demo a{
+          bottom: -9em;
         }
         
-        .jumbotron h1 {
-        	font-size:4em !important ;
+        .jumbotron h3{
+          font-size: 20px;
+
         }
         .jumbotron h2{
-          font-size: 1.75em !important;
+          font-size: 17px !important; 
           margin-top: 20px;
-          line-height:36px;
+          line-height:23px;
+
+
         }
         .submission {
-        	margin-top: 1em;
-        }
-        
-        .demo a{
-          bottom: -8em;
-        }
-        form{
-            margin-top:0em;
+        	margin-top: 2em;
         }
     }
     
      /* Large Devices, Wide Screens */
     @media only screen and (min-width : 1300px) {
-        
+        .jumbotron{
+          margin-top:5em;
+        }
         
         .jumbotron h1 {
-        	font-size:3em ;
+        	font-size: 37px !important ;
         }
         .jumbotron h2{
-          font-size: 1.75em !important;
+          font-size: 17px !important;
+          margin-top: 20px;
         }
+        
+        .jumbotron h3{
+          font-size: 17px;
+        }
+        .submission {
+        	margin-top: 1em;
+        }
+        
+        form{
+            margin-top:2em;
+        }
+      
     }
+    
+     
     /*Huge Devices*/
-      @media only screen and (min-width : 1900px) {
+      @media only screen and (min-width : 1900px)   {
         .jumbotron h1 {
           font-size: 4em !important;
         }
         .jumbotron h2 {
-          margin-top:28px;
+          margin-top:28px !important;
+          font-size:23px !important;
+          line-height:36px;
         }
+        .jumbotron h3 {
+          font-size:23px !important;
+        }  
         .jumbotron{
           margin-top: 10em;
         }
