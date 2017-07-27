@@ -380,12 +380,16 @@ ul{
         .jumbotron h1 {
         	font-size:36px !important;
         	font-weight:bold;
+        	line-height:48px;
         }
         
         
         .jumbotron h2{
           margin-top: 25px;
           font-size:19px;
+          line-height:23px;
+          margin-top:21px;
+          margin-bottom:0px;
         }
         
         .jumbotron h3 {
@@ -407,6 +411,12 @@ ul{
       .jumbotron {
           margin-top: 4em;
         }
+        .jumbotron h3 {
+          line-height: 16px;
+        }
+        .jumbotron h2{
+          margin-bottom:33px;
+        }
     }
     /* Large Devices, Wide Screens */
     @media only screen and (min-width : 1200px) {
@@ -415,6 +425,7 @@ ul{
         }
         .jumbotron h1 {
         	font-size:35px !important ;
+        	line-height:42px;
         }
        
          .demo a{
@@ -423,14 +434,15 @@ ul{
         
         .jumbotron h3{
           font-size: 20px;
+          line-height:52px;
+          margin-bottom:0px;
 
         }
         .jumbotron h2{
           font-size: 17px !important; 
           margin-top: 20px;
-          line-height:23px;
-
-
+          line-height:25px;
+          margin-bottom: 9px;
         }
         .submission {
         	margin-top: 2em;
@@ -440,19 +452,23 @@ ul{
      /* Large Devices, Wide Screens */
     @media only screen and (min-width : 1300px) {
         .jumbotron{
-          margin-top:5em;
+          margin-top:22px;
         }
         
         .jumbotron h1 {
         	font-size: 37px !important ;
+        	line-height:56px;
         }
         .jumbotron h2{
           font-size: 17px !important;
-          margin-top: 20px;
+          margin-top: 24px;
+          margin-bottom:7px;
         }
         
         .jumbotron h3{
           font-size: 17px;
+          line-height:41px;
+          margin-bottom:5px;
         }
         .submission {
         	margin-top: 1em;
@@ -471,9 +487,10 @@ ul{
           font-size: 4em !important;
         }
         .jumbotron h2 {
-          margin-top:28px !important;
+          margin-top:37px !important;
           font-size:23px !important;
-          line-height:36px;
+          line-height:27px;
+          margin-bottom:0px;
         }
         .jumbotron h3 {
           font-size:23px !important;
@@ -483,14 +500,14 @@ ul{
         }
         
         .submission{
-              margin-top: 6em;
+              margin-top: 35px;
         }
         .demo a{
           left: 49%;
           font-size: 16px;
-          bottom: -10em;
+          bottom: -172px;
         }
         form{
-            margin-top:3em;
+            margin-top:33px;
         }
     }
