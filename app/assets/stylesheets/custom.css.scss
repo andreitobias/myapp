@@ -9,6 +9,8 @@ html, body, .landing{
 	height:100%;
 }
 
+
+
 .landing{
 
 background: #de6161;  /* fallback for old browsers */
@@ -268,6 +270,21 @@ input[type = 'email']{
 }
 
 /*Content*/
+.content{
+    margin-left:13%;
+}
+.left {
+    float: left;
+  margin-right: 15px;
+  display: inline-block;
+  margin-right: -10em;
+  margin-top: 40%;
+    font-size: 5em;
+    color: #877eb8;
+}
+.inner{
+    margin-left:7em;
+}
 
 #section03{
 	margin: 5em;
@@ -457,7 +474,7 @@ ul{
         
         .jumbotron h1 {
         	font-size: 37px !important ;
-        	line-height:56px;
+        	line-height:41px;
         }
         .jumbotron h2{
           font-size: 17px !important;
@@ -485,6 +502,8 @@ ul{
       @media only screen and (min-width : 1900px)   {
         .jumbotron h1 {
           font-size: 4em !important;
+         line-height:56px;
+
         }
         .jumbotron h2 {
           margin-top:37px !important;
