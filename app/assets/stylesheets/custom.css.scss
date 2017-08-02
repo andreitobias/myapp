@@ -270,6 +270,11 @@ input[type = 'email']{
 }
 
 /*Content*/
+
+.content-header{
+  text-align: center;
+}
+.content-header{
 .content{
     margin-left:13%;
 }
@@ -277,9 +282,8 @@ input[type = 'email']{
     float: left;
   margin-right: 15px;
   display: inline-block;
-  margin-right: -10em;
   margin-top: 40%;
-    font-size: 5em;
+    font-size: 3em;
     color: #877eb8;
 }
 .inner{
@@ -289,6 +293,33 @@ input[type = 'email']{
 #section03{
 	margin: 5em;
 }
+
+.stats{
+    text-align: center;
+    border-radius: 5%;
+    border: 1px solid transparent;
+    margin-left: 39%;
+    /* background: #665aa6; */
+    box-shadow: 0 3px 28px 0 rgba(0,0,0,0.18);
+    color: #665aa6;
+    font-weight: bold;
+    margin-top: 26%;
+    margin-bottom: 29%;
+    padding: 20px 20px 0 20px;
+
+  
+}
+.stats h1 {
+  font-size: 15em;
+  font-weight: bold;
+}
+
+.stats h2 {
+  font-size: 25px;
+  line-height: 48px;
+  text-align: left;
+}
+
 
 /*Footer*/
  
