@@ -475,10 +475,28 @@ ul{
         }
         .content-header h3{
           font-size: 28px;
+          line-height: 48px;
         }   
         .content-header h4{
-          line-height: 39px;
+         line-height: 39px;
         font-size: 19px;
+        }
+        .stats h1 {
+            font-size: 6em;
+        }
+        .stats {
+            margin-left:0%;
+        }
+        .left{
+            display:none;    
+        }
+        
+        .stats h2 {
+            font-size: 19px;
+            line-height: 39px;
+        }
+        .seconds h1 {
+            font-size: 5em;
         }
     }
     @media only screen and (min-width : 1000px) {

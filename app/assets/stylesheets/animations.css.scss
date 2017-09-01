@@ -117,6 +117,8 @@ box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
   .animation-element.slide-left.testimonial:nth-of-type(even){
     width: 100%;
     margin: 0px 0px 20px 0px;
+    margin-top: 17%;
+
   }
   .animation-element.slide-left.testimonial .right,
   .animation-element.slide-left.testimonial .left,
@@ -131,4 +133,15 @@ box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
     margin-bottom: 5px;
   }
   
+}
+
+@media only screen and (min-width : 640px) {
+  .animation-element.slide-left.testimonial h4{
+    font-size: 19px;
+    line-height: 39px;
+  }
+  .animation-element.slide-left.testimonial h1{
+    font-size: 28px;
+    line-height: 39px;
+  }
 }
