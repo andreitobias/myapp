@@ -27,11 +27,7 @@ background: linear-gradient(to left, rgba(40, 89, 235, 0.75), #de6161), url('3.j
    background-color:#333;   
    display:inline-block;
 }
-.text{
-   background-color:#444;  
 
-   display:inline-block;
-}
  a:visited{
  	text-decoration:none;
  }
@@ -271,6 +267,15 @@ input[type = 'email']{
 
 /*Content*/
 
+.wrapper {
+    background: #de6161;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #2657eb, #de6161);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, rgba(40, 89, 235, 0.75), #de6161); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 .subtitle{
     margin-top: 2em;
     line-height: 48px;
@@ -304,7 +309,6 @@ input[type = 'email']{
 }
 
 #section03{
-	margin: 5em;
 }
 
 .stats{
@@ -554,13 +558,31 @@ ul{
         }
         .left {
           display: inline;
+          float: left;
+          margin-bottom:73px;
+          font-size: 3em;
+          margin-top:0px;
+          margin-left: 5em;
         }
         .content-header h3 {
           font-size: 30px;
+        }
+        .content-header {
           width: 90%;
           margin-left: 5%;
         }
-
+        .icon {    
+          background: #f1c40f;
+          margin-top: 63px;
+        }
+        i{
+          padding-top: 10px;
+          margin-top: 10px;  
+        }
+        .first{
+            margin-top: 10px;
+            width:100% !important;
+        }    
     }
     
      /* Large Devices, Wide Screens */
