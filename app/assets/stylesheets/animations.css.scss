@@ -44,7 +44,7 @@ box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
 
 .animation-element.slide-left.testimonial:nth-of-type(odd) {
   width: 100%;
-  margin: 10% 0% 3.0% 0%;
+  margin: 0% 0% 3.0% 0%;
 }
 
 .animation-element.slide-left.testimonial:nth-of-type(even) {
@@ -148,5 +148,13 @@ box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
 @media only screen and (min-width : 1200px){
   .animation-element.slide-left.testimonial:nth-of-type(even), .animation-element.slide-left.testimonial:nth-of-type(odd){
     width: 100%;
+  }
+  .animation-element.slide-left.testimonial h3{
+    font-size: 36px;
+    line-height: 1.2;
+  }
+  .animation-element.slide-left.testimonial h4{
+    font-size: 20px;
+    line-height: 1.6;
   }
 }

@@ -20,6 +20,7 @@ background: linear-gradient(to left, rgba(40, 89, 235, 0.75), #de6161), url('3.j
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+margin-bottom: 2em;
 
 }
 
@@ -284,7 +285,8 @@ background: linear-gradient(to left, rgba(40, 89, 235, 0.75), #de6161); /* W3C, 
 
 .content-header h3{
     font-size: 32px;
-    font-weight: bold;
+    font-weight: normal;
+    text-transform: uppercase;
     color: #665aa6;
     text-align:center;
 }
@@ -302,7 +304,7 @@ background: linear-gradient(to left, rgba(40, 89, 235, 0.75), #de6161); /* W3C, 
   display: inline-block;
   margin-top: 25%;
     font-size: 2em;
-    color: #877eb8;
+    color: #34495e;
 }
 .inner{
     margin-left:7em;
@@ -559,30 +561,53 @@ ul{
         .left {
           display: inline;
           float: left;
-          margin-bottom:73px;
+          padding-left: 7em;
           font-size: 3em;
-          margin-top:0px;
-          margin-left: 5em;
+          margin-top: 0px;
         }
         .content-header h3 {
-          font-size: 30px;
+          font-size: 36px;
+        }
+        .subtitle{
+          margin-top: 2em;
+        }
+        .content-header h4 {
+          font-size: 24px;
+          line-height: 1.6;
+          margin-bottom: 2em;
+          margin-top: 2em;
+          margin-bottom: 2em;
         }
         .content-header {
           width: 90%;
           margin-left: 5%;
+          margin-top: 2em;
+          margin-bottom: 8em;
+        }
+        .seconds h1 {
+          font-size: 7em !important;
+        }
+        .stats {
+          margin-top: 0;
+          margin-bottom: 4em;
+        }
+        .stats h1 {
+          font-size: 10em;
+        }
+        .stats h2 {
+          font-size: 24px;
+          line-height: 1.6;
         }
         .icon {    
           background: #f1c40f;
-          margin-top: 63px;
+          padding: 56px 0px 56px 0px ;
         }
-        i{
-          padding-top: 10px;
-          margin-top: 10px;  
-        }
+        
         .first{
-            margin-top: 10px;
+            margin: 4em 0 8em 0;
             width:100% !important;
-        }    
+        } 
+        
     }
     
      /* Large Devices, Wide Screens */
@@ -593,7 +618,7 @@ ul{
         
         .jumbotron h1 {
         	font-size: 37px !important ;
-        	line-height:41px;
+        	line-height:48px;
         }
         .jumbotron h2{
           font-size: 17px !important;
