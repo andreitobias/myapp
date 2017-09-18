@@ -158,3 +158,10 @@ box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
     line-height: 1.6;
   }
 }
+
+@media only screen and (min-width : 1900px) {
+   .animation-element.slide-left.testimonial:nth-of-type(even), .animation-element.slide-left.testimonial:nth-of-type(odd){
+    width: 80%;
+    margin: 4% 30% 3% 0%;
+  }
+}
