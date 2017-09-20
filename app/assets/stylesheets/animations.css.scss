@@ -69,7 +69,7 @@ box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
 .animation-element.slide-left.testimonial .right{
   float: left;
   display: inline-block;
-  margin-left: 1em;
+  margin-left: 0;
   
 }
 
@@ -117,7 +117,7 @@ box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
   .animation-element.slide-left.testimonial:nth-of-type(even){
     width: 100%;
     margin: 0px 0px 20px 0px;
-    margin-top: 17%;
+    margin-top: 2em;
 
   }
   .animation-element.slide-left.testimonial .right,
@@ -134,7 +134,21 @@ box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
   }
   
 }
-
+@media only screen and (min-width : 320px){
+   .animation-element.slide-left.testimonial h4{
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .animation-element.slide-left.testimonial h1{
+    font-size: 30px;
+  }
+  .animation-element.slide-left.testimonial h3{
+    font-size: 30px;
+  }
+  .right {
+    margin-left:0;
+  }
+}
 @media only screen and (min-width : 640px) {
   .animation-element.slide-left.testimonial h4{
     font-size: 19px;

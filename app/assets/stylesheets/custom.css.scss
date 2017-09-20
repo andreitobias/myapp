@@ -446,28 +446,37 @@ ul{
     background:rgba(0,0,0,1);
     text-decoration:none;
 }
+.screen{
+  display: inline;
+}
+.phone{
+  display: inline;
+}
 
  /* Small Devices, Mobile phones*/
    @media only screen and (min-width : 320px) {
      
-      h1 {
-        font-size: 19px !important;        	
-        line-height: 1.6;
+      .jumbotron h1 {
+        font-size: 40px !important;        	
+        line-height: 1.1;
+        font-weight: bold;
       }
-      h2 {
+      .phone{
+        font-size: 20px;
+        display: block;
+        margin-top: 1em;
+        font-weight: normal;
+      }
+      .screen{
+        display:none;
+      }
+      .jumbotron h2 {
         font-size: 14px;
         line-height: 1.6;
       }
       .jumbotron{
-          margin-top: 17px;
+          margin-top: 0;
           margin-bottom: 0 !important;
-        }
-
-      .jumbotron h2{
-          font-size: 14px;
-          
-          margin-top:21px;
-          margin-bottom:0px;
         }
         
         .jumbotron h3 {
@@ -483,48 +492,66 @@ ul{
         .demo a {
           position: relative;
           bottom: -5em;
-          left: 46%;
+          left: 50%;
           font-size: 14px;
         }
         form {
           margin-top: 0;
         }
-        .demo a {
-          display: none;
-        }
-
+  
         .content-header h3{
-          font-size: 20px;
-          line-height: 1.6;
+          font-size: 30px;
+          line-height: 1.1;
+          text-transform: capitalize;
         }   
         .content-header h4{
-          line-height: 1.6;
+          line-height: 24px;
           font-size: 14px;
         }
-        .stats h1 {
-          font-size: 20px;
-        }
-        .stats {
-          margin-top: 4em;
-          margin-left: 0;
-          width: 100%;
-        }
-        .stats h2 {
-          font-size: 14px;
-          line-height: 1.6;
+        .stats{
+          display:none;
         }
 
         .left {
-          position: absolute;
-          padding-top: 9em;
+          position: relative;
+          padding-top: 2em;
           z-index: 1;
-          font-size: 3px;
+          font-size: 1em;
+          margin: 0 30% 0 30%;
+          border-bottom: 1px solid #dad5d5;
+          width: 111px;
+        }
+        .demo p {
+          display: none;
         }
    }
-     
-
+   @media only screen and (min-width : 400px) {
+     .jumbotron {
+        margin-top: 3em;
+     }
+     .demo p {
+        display: initial;
+     }
+     .demo a {
+        left: 44%;
+        bottom: -7em;
+     }
+   }
  /* Medium Devices, Desktops */
     @media only screen and (min-width : 640px) {
+        .screen{
+          display: initial;
+        }
+        .phone{
+          display: initial;
+          font-size: 36px;
+          font-weight: bold;
+          line-height: 48px;
+        }
+        .demo a{
+          left: 48%;
+        }
+        
         .jumbotron{
           margin-top:7em;
         }
@@ -565,9 +592,7 @@ ul{
           line-height: 39px;
           font-size: 19px;
         }
-        .border {
-          border-bottom: 1px solid rgba(202, 195, 195, 0.36);
-        }
+        
         .stats h1 {
             font-size: 6em;
         }
@@ -589,10 +614,11 @@ ul{
           padding-bottom: 4em;
         } 
         .left {
-          position: absolute;
-          padding-top: 9em;
+          position: relative;
           z-index: 1;
-          font-size: 9px;
+          font-size: 1em;
+          margin-left: 43%;
+          border-bottom: 0;
         }
     }
     @media only screen and (min-width : 760px) {
@@ -624,10 +650,17 @@ ul{
         }
         .left {
           display: inline;
-          float: left;
-          padding-left: 3em;
-          font-size: 3em;
+          padding-left: 0;
+          font-size: 2em;
           margin-top: 0px;
+          margin: 0 0 0 23%;
+        }
+        .demo a{
+          position: absolute;
+          left: 0;
+        }
+        .demo p {
+          margin-left: 48.5%;
         }
     }
     /* Large Devices, Wide Screens */
