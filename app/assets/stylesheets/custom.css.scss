@@ -486,12 +486,12 @@ ul{
         }
       .submission {
         	font-size: 14px !important;
-        	margin-top: 1.5em;
+        	margin-top: 1.3em;
         	font-size: 14px !important;
         } 
         .demo a {
           position: relative;
-          bottom: -5em;
+          bottom: -4em;
           left: 50%;
           font-size: 14px;
         }
@@ -534,7 +534,7 @@ ul{
      }
      .demo a {
         left: 44%;
-        bottom: -7em;
+        bottom: -6em;
      }
    }
  /* Medium Devices, Desktops */
@@ -553,7 +553,7 @@ ul{
         }
         
         .jumbotron{
-          margin-top:7em;
+          margin-top:0;
         }
         
         .jumbotron h1 {
@@ -628,11 +628,9 @@ ul{
     }
    
     @media only screen and (min-width : 1000px) {
-      .jumbotron {
-          margin-top: 2em;
-        }
+      
         .jumbotron h1{
-           font-size: 34px !important;
+           font-size: 36px !important;
         }
         .jumbotron h3 {
           line-height: 16px;
@@ -657,10 +655,11 @@ ul{
         }
         .demo a{
           position: absolute;
-          left: 0;
+          left: 48.5%;
+          bottom: -9em;
         }
         .demo p {
-          margin-left: 48.5%;
+          margin-left: 0;
         }
     }
     /* Large Devices, Wide Screens */
@@ -669,12 +668,12 @@ ul{
           margin-top:2em;
         }
         .jumbotron h1 {
-        	font-size:35px !important ;
+        	font-size:36px !important ;
         	line-height:35px;
         }
        
          .demo a{
-          bottom: -9em;
+          bottom: -12em;
         }
         
         .jumbotron h3{
@@ -739,11 +738,15 @@ ul{
      /* Large Devices, Wide Screens */
     @media only screen and (min-width : 1300px) {
         .jumbotron{
-          margin-top:22px;
+          margin-top: 8em;
         }
         
         .jumbotron h1 {
         	font-size: 37px !important ;
+        	line-height:48px;
+        }
+        .phone {
+        	font-size: 37px;
         	line-height:48px;
         }
         .jumbotron h2{
@@ -771,9 +774,13 @@ ul{
     /*Huge Devices*/
       @media only screen and (min-width : 1900px)   {
         .jumbotron h1 {
-          font-size: 4em !important;
-         line-height:56px;
-
+          font-size: 54px !important;
+         line-height: 56px;
+        }
+        
+        .phone{
+          font-size: 54px;
+          line-height: 56px;
         }
         .jumbotron h2 {
           margin-top:37px !important;
