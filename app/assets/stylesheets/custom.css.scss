@@ -192,10 +192,22 @@ input[type = 'email']{
 .cta2{
     margin-bottom: 4em;
     margin-top: 4em;
+    
 }
+
+
 .submission2{
   font-size: 20px !important;
+  background-color: rgba(255, 255, 255, 0) !important;
+  border-color: #e74c3c !important;
+  color: #2c3e50 !important;
 }
+.submission2:hover{
+    color: #fff !important;
+    background-color: rgb(231, 76, 60) !important;
+    border-color: #398439 !important;
+}
+
 
 /*Buttons*/
 .btn {
@@ -343,9 +355,7 @@ background: linear-gradient(to left, rgba(40, 89, 235, 0.75), #de6161); /* W3C, 
 .seconds h1{
   font-size: 7em;
 }
-.cta2 {
-  color:#f1c40f;
-}
+
 
 
 /*Footer*/
@@ -642,6 +652,9 @@ ul{
         .jumbotron h2{
           margin-bottom:33px;
         }
+        .jumbotron{
+          margin-top: 5em;
+        }
         .stats{
           margin-left: 25%;
           width: 50%;
@@ -656,7 +669,7 @@ ul{
         .demo a{
           position: absolute;
           left: 48.5%;
-          bottom: -9em;
+          bottom: -12em;
         }
         .demo p {
           margin-left: 0;
