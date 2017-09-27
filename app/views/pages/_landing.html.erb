@@ -6,9 +6,6 @@
               
               <div class="col-md-8 col-md-offset-2">
                 
-                  <% flash.each do |key, value| %>
-                      <%= content_tag :div, value, class: "alert alert-#{key}" %>
-                    <%end%>
                   <h3>Free Website Checkup</h3>     
                   <h1> Get More Customers <span class="phone">By Avoiding Critical Website Mistakes</span>  </h1> 
               </div>
@@ -22,7 +19,7 @@
             </div>
             
             <div class="col-md-12">  
-                          <%= render "contacts/form"%>
+                  <%= render "contacts/form"%>
 
                <!--
                 <div class="col-md-6 col-md-offset-3">

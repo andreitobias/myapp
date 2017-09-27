@@ -3,4 +3,8 @@ class PagesController < ApplicationController
     @contact = Contact.new
   end
   
+  def thankyou
+    @contact = Contact.new
+  end  
+  
 end

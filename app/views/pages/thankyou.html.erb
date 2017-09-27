@@ -1,0 +1,13 @@
+<div class ="thankyou">
+  <div class="container-fluid">
+      <div class="col-md-8 col-md-offset-2">
+           <h1> Thank you for your submission!</h1>     
+      <% flash.each do |key, value| %>
+          <%= content_tag :div, value, class: "alert alert-#{key}" %>
+        <%end%> 
+    </div>
+    
+  </div>
+  <%= render "layouts/footer"%>
+</div>  
+
