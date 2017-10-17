@@ -19,7 +19,14 @@ class ContactsController < ApplicationController
       flash[:danger] = "Message not sent."
       redirect_to error_path
     end  
-  end  
+  end 
+  def index
+    if admin_signed_in?
+     @contacts = Contact.all
+    else
+      redirect_to root_path
+    end 
+  end
   
   private
     def contact_params
