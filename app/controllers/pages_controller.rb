@@ -7,4 +7,8 @@ class PagesController < ApplicationController
     @contact = Contact.new
   end  
   
+  def error
+    @contact = Contact.new
+  end
+  
 end

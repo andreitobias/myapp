@@ -57,7 +57,7 @@ label {
 
 .jumbotron h1,p{
   text-align: center;
-  color:#fff !important;
+  color:#fff;
 }
 
 .jumbotron h2 {
@@ -100,6 +100,7 @@ border:none !important;
 border-bottom:  1px solid #fff !important;
 -webkit-box-shadow: none;
 border-radius: 0px !important;
+box-shadow:none !important;
 
 }
 
@@ -154,9 +155,9 @@ form{
 	  background-color: rgba(92, 184, 92, 0.03) !important;
     border-color: #fff !important;
     margin-top: 2.5em;
-    font-size: 22px !important;
     font-weight: bold;
     text-transform:uppercase;
+    border-radius: 50px !important;
 }
 
 .submission:focus, .submission.focus {
@@ -201,36 +202,50 @@ form{
 
 
 .submission2{
-  font-size: 20px !important;
-  background-color: rgba(255, 255, 255, 0) !important;
-  border-color: #e74c3c !important;
-  color: #2c3e50 !important;
   text-transform: uppercase;
+  width:100%;
+  background-color:transparent !important;
+  color:#000 !important;
+  border-radius:50px !important;
 }
 .submission2:hover{
-    color: #fff !important;
-    background-color: rgb(231, 76, 60) !important;
-    border-color: #398439 !important;
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.25);
+  background-color: #2c3e50 !important;
+  color:#fff !important;
 }
 
+
+.back {
+  text-decoration:none!important;
+  text-transform: uppercase;
+}
+.back a{
+  text-decoration:none!important;
+  color:#000 !important;
+}
+.back:hover a{
+  text-decoration:none!important;
+}
 /*Modal Contact Form Pop-up*/
 .modal-footer{
   border:0 !important;
+}
+#myModal{
+  margin-top: 10em;
 }
 
 #myModal .submission2 {
     margin-bottom: 1em;
     margin-top: 1em;
     text-transform: uppercase;
+    width: 100%;
 }
 .modal-header {
   text-align: center;
   text-transform: capitalize;
 }
-
 /*Buttons*/
 .btn {
-      width: 100%;
 }
 
 #section02{
@@ -307,20 +322,10 @@ form{
 
 /*Content*/
 
-.wrapper {
-    background: #de6161;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to left, #2657eb, #de6161);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to left, rgba(40, 89, 235, 0.75), #de6161); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
--webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
 .subtitle{
     margin-top: 2em;
     line-height: 48px;
 }
-
 
 .content-header h3{
     font-size: 32px;
@@ -344,15 +349,16 @@ background: linear-gradient(to left, rgba(40, 89, 235, 0.75), #de6161); /* W3C, 
     margin-left:7em;
 }
 
-#section03{
+.bordered {
+  border-bottom: 1px solid #ecf0f1;
 }
-
+/*
 .stats{
     text-align: center;
     border-radius: 5%;
     border: 1px solid transparent;
     margin-left: 39%;
-    /* background: #2c3e50; */
+    /* background: #2c3e50; 
     box-shadow: 0 3px 28px 0 rgba(0,0,0,0.18);
     color: #2c3e50;
     font-weight: bold;
@@ -369,15 +375,28 @@ background: linear-gradient(to left, rgba(40, 89, 235, 0.75), #de6161); /* W3C, 
   font-size: 25px;
   line-height: 48px;
   text-align: left;
-  padding-left: 1em
+  padding-left: 1em;
 }
 .seconds h1{
   font-size: 7em;
 }
+.grey{
+  background-color:  #ecf0f1;
+}
+*/
 
+.notify .back{
+  width: 45%;
+  
+}
 
+.notify .submission2{
+  float: right;
+  width: 45%;
+}
 
 /*Footer*/
+
 .thankyou .footer{
 	width:100%;
 	height:40px;
@@ -385,7 +404,7 @@ background: linear-gradient(to left, rgba(40, 89, 235, 0.75), #de6161); /* W3C, 
 	bottom:0;
 	left:0;
 }
-
+ 
 .footer p, a{
    color:#fff;
  }
@@ -409,8 +428,8 @@ ul{
         -ms-filter: "FlipH";
 } 
 
-.fa-inverse{
-  color: #2c3e50 !important;
+.bleu{
+  color: #2c3e50!important;
 }
 
  
@@ -423,9 +442,16 @@ ul{
   display: inline;
 }
 
+.show-me {
+  display:inline;
+}
+
+
  /* Small Devices, Mobile phones*/
    @media only screen and (min-width : 320px) {
-     
+       .show-me{
+         display:none!important;
+       }  
       .jumbotron h1 {
         font-size: 40px !important;        	
         line-height: 1.1;
@@ -458,6 +484,7 @@ ul{
         	font-size: 14px !important;
         	margin-top: 1em;
         	font-size: 14px !important;
+        	width: 100%;
         } 
         .demo a {
           position: relative;
@@ -559,8 +586,8 @@ ul{
           line-height: 48px;
         }   
         .content-header h4{
-          line-height: 39px;
-          font-size: 19px;
+          line-height: 36px;
+          font-size: 17px;
         }
         
         .stats h1 {
@@ -581,10 +608,8 @@ ul{
         .first{
           margin-top: 0em;
           width:100% !important;
-          padding-bottom: 4em;
         } 
         .left {
-          position: relative;
           z-index: 1;
           font-size: 1em;
           margin-left: 43%;
@@ -592,13 +617,23 @@ ul{
         }
     }
     @media only screen and (min-width : 760px) {
-      .left {
-        padding-top: 0em;
+     
+      .icon{
+        padding-top:1em;
       }
+      
     }
    
     @media only screen and (min-width : 1000px) {
-      
+         .left {
+          display:none;
+        }
+        .show-me {
+          display:inline!important;
+        }
+        .icon{
+          padding:0!important;
+        }
         .jumbotron h1{
            font-size: 36px !important;
         }
@@ -615,17 +650,19 @@ ul{
         .jumbotron{
           margin-top: 5em;
         }
+        
         .stats{
           margin-left: 25%;
           width: 50%;
         }
+        /*
         .left {
-          display: inline;
           padding-left: 0;
           font-size: 2em;
           margin-top: 0px;
           margin: 0 0 0 23%;
-        }
+        }*/
+        
         .demo a{
           position: absolute;
           left: 48.5%;
@@ -690,9 +727,7 @@ ul{
           margin-top: 4em;
           margin-bottom: 4em;
         }
-        .mobile{
-          margin-top: 4em;
-        }
+        
         .stats h1 {
           font-size: 10em;
         }
@@ -701,17 +736,18 @@ ul{
           line-height: 1.6;
         }
         .first{
-            margin-top: 4em;
             width:100% !important;
-            padding-bottom: 4em;
         } 
+        .text{
+          padding-top: 115px;
+        }
         
     }
     
      /* Large Devices, Wide Screens */
     @media only screen and (min-width : 1300px) {
         .jumbotron{
-          margin-top: 8em;
+          margin-top: 0em;
         }
         
         .jumbotron h1 {
@@ -767,9 +803,8 @@ ul{
         .jumbotron{
           margin-top: 10em;
         }
-        
         .submission{
-              margin-top: 35px;
+          margin-top: 35px;
         }
         .demo a{
           left: 49%;
@@ -778,9 +813,6 @@ ul{
         }
         form{
             margin-top:33px;
-        }
-        .left{
-          padding-left: 8em;
         }
         .content-header{
           padding: 0 9em 0 9em;

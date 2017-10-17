@@ -11,13 +11,13 @@ class ContactsController < ApplicationController
       email = params[:contact][:email]
       body = params[:contact][:url]
       
-      ContactMailer.contact_email(name, email, body).deliver
+      #ContactMailer.contact_email(name, email, body).deliver
       
       flash[:success] = "Message sent."
       redirect_to thankyou_path
     else
       flash[:danger] = "Message not sent."
-      redirect_to root_path
+      redirect_to error_path
     end  
   end  
   

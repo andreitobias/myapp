@@ -1,0 +1,59 @@
+<div class ="thankyou">
+<div class="container"> 
+  <div class="col-md-6 col-md-offset-3">
+    <% flash.each do |key, value| %>
+      <%= content_tag :div,value, class: "alert alert-#{key}" %>
+    <%end%> 
+  </div>
+</div>
+    
+<div class="notify error">
+  <h1>Ooops!</h1>
+    <div class="error-icon">
+      <span class="fa-stack fa-2x">
+        <i class="fa fa-circle  fa-stack-2x"></i>
+        <i class="fa fa-times fa-stack-1x fa-inverse"></i>
+      </span>
+    </div>  
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+  Architecto dolores sequi delectus vitae fugiat obcaecati voluptates, 
+  fuga, provident voluptatem voluptatibus consectetur, dolorem dicta eveniet dolor. 
+  Commodi nihil, inventore sequi consequatur.</p>  
+  
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+  Earum architecto id temporibus tempore accusantium voluptate similique vel hic officia rerum! 
+  Rem ex quia consequatur nesciunt, 
+  temporibus numquam rerum mollitia error.</p>
+    <div class="cta2">
+      <div class ="row">
+      <btn class="btn btn-primary btn-lg submission2" data-toggle="modal" data-target="#myModal">Try again</btn>
+      <button type="button" class="btn btn-default btn-lg back"><%= link_to 'Go Back', root_path %></button>
+      </div>
+    </div>
+ </div>
+ <%= render "layouts/footer"%>
+</div>
+<div class = "container">
+  
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Free Website Checkup</h4>
+      </div>
+      <div class="modal-body">
+        <%= render "contacts/form2"%>
+      </div>
+      <div class="modal-footer">
+        
+      </div>
+    </div>
+
+  </div>
+</div>

@@ -24,9 +24,7 @@ $(document).ready(function() {
       //check to see if this current container is visible (its viewable if it exists between the viewable space of the viewport)
       if ((element_bottom_position >= window_top_position) && (element_top_position <= window_bottom_position)) {
         element.addClass('in-view');
-      } else {
-        element.removeClass('in-view');
-      }
+      } 
     });
 
   }

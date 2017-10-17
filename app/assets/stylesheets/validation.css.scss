@@ -1,0 +1,74 @@
+#myModal p{
+  text-align: left;
+}
+
+.error{
+  font-weight: normal;
+}
+#myModal .error{
+    color: #e80000;
+}
+#email{
+	width:340px;
+	height:40px;
+}
+.inline-actions{
+	position: absolute;
+	right: 0;
+	bottom: 20px;
+	z-index: 1;
+	overflow: hidden;
+}
+.check-icn{
+	background: url(../assets/icons/checkmark-sm.png) center center no-repeat;
+	width:34px; 
+    height:34px;
+}
+
+.right-inner-addon {
+    position: relative;
+}
+.right-inner-addon input {
+    padding-right: 30px;    
+}
+.right-inner-addon button {
+    position: absolute;
+    right: -5px;
+    pointer-events: none;
+}
+
+button.success,button.create{
+	background-color: #27ae60;
+}
+button.fail{
+	background-color: #CF000F;
+}
+button.create{
+	background-color: #27ae60;
+	color:#fff;
+}
+button.create:hover, button.create:active{
+	background-color: #00b180;
+	color:#fff;
+}
+
+
+#myModal input[type="text"],#myModal input[type="email"], #myModal input[type="url"]{
+
+  background-color : #f7f7f7; 
+  outline: none;
+  border: 2px solid #e7e7e7 !important;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+
+}
+
+#myModal input[type="text"]:focus, #myModal input[type="email"]:focus, #myModal input[type="url"]:focus{
+  background-color : #e7e7e7; 
+  outline: none;
+  border: 2px solid #e7e7e7 !important;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+}

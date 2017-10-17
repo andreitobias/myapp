@@ -1,14 +1,14 @@
 
 <!--Header-->
 <div class ="container-fluid">      
-  <div class="row">
+  <div class="row bordered">
       <div class="col-md-10 col-md-offset-1">
           <div class ="content-header">    
               <h3> Are you getting the most out of your website ? </h3>
               <h4>We’ve compiled a list of reasearch backed key aspects which could make or break your website.<br>  One of our experts will personally check key aspects of your website and let you know what can be done <b>right now</b>
               to make sure that your website is optimized to turn visitors into paying customers.
               </h4>
-              <h3 class ="subtitle"> Here’s why you could be shooting your business in the foot </h3>
+              <h3 class ="subtitle "> Here’s why you could be shooting your business in the foot </h3>
           </div>   
       </div>    
   </div>
@@ -23,15 +23,16 @@
   </div>
 </div>      
           <!-- testimonial one -->
-<div class ="container first border">  
+<div class ="container-fluid first bordered">  
   <div class="row">
       <div class = "col-md-6 icon">
-          <div class="left">
-            <span class="fa-stack fa-4x">
-              <i class="fa fa-circle  fa-stack-2x"></i>
-              <i class="fa fa-usd fa-stack-1x fa-inverse"></i>
-            </span>
-          </div>
+        <div class="left">
+          <span class="fa-stack fa-4x">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-mobile fa-stack-1x fa-inverse bleu"></i>
+          </span>
+        </div>
+        <%= image_tag('2.jpg', class:'img-responsive show-me') %>
       </div> 
       <div class= "col-md-6 text">      
         <div class="container-fluid">
@@ -60,17 +61,16 @@
   </div>
 </div>  
       <!-- testimonial one -->
-<div class ="container first border">      
+<div class ="container first bordered">      
   <div class="row">
-      <div class = "col-md-6 icon">
-          <div class="left">
-            <span class="fa-stack fa-4x">
-              <i class="fa fa-circle  fa-stack-2x"></i>
-              <i class="fa fa-mobile fa-stack-1x fa-inverse"></i>
-            </span>
-          </div>
-      </div> 
-    
+       
+    <div class="left">
+        <span class="fa-stack fa-4x">
+          <i class="fa fa-circle fa-stack-2x"></i>
+          <i class="fa fa-usd fa-stack-1x fa-inverse bleu"></i>
+        </span>
+      </div>
+      
       <div class= "col-md-6 text">      
         <div class="container-fluid">
           <div class="animation-element slide-left testimonial">
@@ -85,6 +85,10 @@
           </div>
       </div>
     </div>
+    
+    <div class = "col-md-6 icon">
+      <%= image_tag('phone.jpg', class:'img-responsive show-me') %>
+    </div>
   </div>
 </div>   
 <!--Speed --> 
@@ -98,18 +102,19 @@
 </div>
 <div class ="container first">      
   <div class="row">
-      <div class = "col-md-6 icon">
+      <div class = "col-md-6 icon ">
           <div class="left">
             <span class="fa-stack fa-4x">
-              <i class="fa fa-circle  fa-stack-2x"></i>
-              <i class="fa fa-clock-o fa-stack-1x fa-inverse"></i>
-            </span>
+          <i class="fa fa-circle fa-stack-2x"></i>
+          <i class="fa fa-clock-o  fa-stack-1x fa-inverse bleu"></i>
+        </span>
           </div>
+          <%= image_tag('1.jpg', class:'img-responsive show-me') %>
       </div> 
-      <div class= "col-md-6 text">      
+      <div class= "col-md-6 text ">      
         <div class="container-fluid">
           
-          <div class="animation-element slide-left testimonial">
+          <div class="animation-element slide-left testimonial ">
             <div class="header">
               <div class="right">
                 <h3>Is your website fast enough ? </h3>
@@ -123,17 +128,23 @@
     </div>
   </div>
 </div>
+
+
+
 <!--CTA 2 -->
 <div class = "container">
   <div class ="col-md-6 col-md-offset-3">
     <div class="cta2">
-      <btn class="btn btn-success submission2" data-toggle="modal" data-target="#myModal">ANALYZE MY WEBSITE</btn>
+      <btn class="btn btn-primary btn-lg submission2" data-toggle="modal" data-target="#myModal">ANALYZE MY WEBSITE</btn>
     </div>
   </div>
 </div>
 
+
+
+
 <!-- Modal -->
-<div id="myModal" class="modal fade" role="dialog">
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
 
     <!-- Modal content-->
