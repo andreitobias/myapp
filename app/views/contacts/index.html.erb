@@ -1,2 +1,21 @@
 <%= button_to "Sign Out", destroy_admin_session_path, method: :delete, class: 'btn btn-primary navbar-btn' %>
-<%= render 'contacts/all' %>
+<div class="row">
+    <div class="col-md-8 col-md-offset-2"> 
+        <table class="table table-striped">
+          <tr>
+            <th>Name</th>
+            <th>Email</th> 
+            <th>URL</th>
+          </tr>
+          <% @contacts.each do |contact| %>
+          <tr>
+            <td><%= contact.id %></td>
+            <td><%= contact.name%></td>
+            <td><%= contact.email %></td> 
+            <td><%= contact.url %></td>
+            <td><%= link_to 'Generate', new_contact_report_path(contact) %></td>
+          </tr>
+            <% end %>  
+        </table>
+    </div>        
+</div>

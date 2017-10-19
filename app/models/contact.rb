@@ -5,4 +5,5 @@ class Contact < ActiveRecord::Base
                     format: {message: "Please enter  a valid email" , with: VALID_EMAIL_REGEX }
   validates :url, presence: { message: "Please enter  a valid url" }, length: { maximum: 50 }, allow_blank: false
   has_one :admin
+  has_one :report
 end  
