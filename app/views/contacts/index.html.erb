@@ -1,11 +1,24 @@
-<%= button_to "Sign Out", destroy_admin_session_path, method: :delete, class: 'btn btn-primary navbar-btn' %>
+
+<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+  <div class = "container">
+    <ul class="nav navbar-nav navbar-right">
+      <%= button_to "Sign Out", destroy_admin_session_path, method: :delete, class: 'btn btn-primary navbar-btn' %>
+    </ul>
+  </di>
+</nav>
 <div class="row">
     <div class="col-md-8 col-md-offset-2"> 
+    <h1 class="text-center bg-info" >Contacts and Reports</h1>
         <table class="table table-striped">
           <tr>
+            <th>ID</th>
             <th>Name</th>
             <th>Email</th> 
             <th>URL</th>
+            <th>Generate</th>
+            <th>View</th>
+            <th>Edit</th>
+            <th>Delete</th>
           </tr>
           <% @contacts.each do |contact| %>
           <tr>
@@ -14,6 +27,15 @@
             <td><%= contact.email %></td> 
             <td><%= contact.url %></td>
             <td><%= link_to 'Generate', new_contact_report_path(contact) %></td>
+            <%if contact.report.present?%>
+              <td><%= link_to 'View', contact_report_path(contact) %></td>
+              <td><%= link_to 'Edit',  edit_contact_report_path(contact) %></td>
+              <td><%= link_to 'Delete',  contact_report_path(contact), method: :delete %></td>
+            <%else%>
+              <td>n/a</td>
+              <td>n/a</td>
+              <td>n/a</td>
+            <%end%>
           </tr>
             <% end %>  
         </table>

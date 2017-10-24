@@ -11,12 +11,21 @@ class ReportsController < ApplicationController
   def create 
     @contact = Contact.find( params[:contact_id] )
     @report = @contact.build_report(report_params)
-    if report.save
+    if @report.save
       flash[:success] = "report Updated!"
-      redirect_to Contact_path( params[:contact_id] )
+      redirect_to contact_report_path( params[:contact_id] )
     else
       render action: :new
     end
+  end
+  
+  def show
+    # form where a Contact can fill out their own report.
+    @contact = Contact.find( params[:contact_id] )
+    @report = @contact.report
+    @impression = @contact.report.impression
+    @mobile = @contact.report.mobile
+    @speed = @contact.report.speed
   end
   
   def edit
@@ -26,15 +35,27 @@ class ReportsController < ApplicationController
   
   def update
     @contact = Contact.find( params[:contact_id] )
-    report = @contact.report
-    if report.update_attributes(report_params)
+    @report = @contact.report
+    if @report.update_attributes(report_params)
       flash[:success] = "report Updated!"
-      redirect_to contact_path( params[:contact_id] )
+      redirect_to contact_report_path( params[:contact_id] )
     else
       render action: :edit
     end
   end
-  
+
+  def destroy
+    @contact = Contact.find( params[:contact_id] )
+    @report = @contact.report
+    if @report.present?
+      @report.destroy
+      @contact.destroy
+      redirect_to contacts_path
+    else
+      redirect_to contacts_path
+    end
+  end
+
   private
     def report_params
       params.require(:report).permit(:impression, :mobile, :speed)

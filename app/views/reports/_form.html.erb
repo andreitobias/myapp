@@ -1,0 +1,22 @@
+<%= form_for @report, url: contact_report_path, html: { multipart: true } do |f| %>
+  <div class="form-group">
+  <h1>Impression </h1>  
+    <%= f.label :impression, "What is it? What is it about? What's in it for me? " %>
+    <%= f.text_area :impression, class: 'form-control' %>
+    
+  </div>
+  <div class="form-group">
+    <h1>Mobile-Responsive</h1>  
+    <%= f.label :mobile %>
+    <%= f.select :mobile, ['yes', 'no'], class: 'form-control' %>
+  </div>
+  <div class="form-group">
+    <h1>Speed</h1> 
+    <%= f.label :speed %>
+    <%= f.number_field :speed, class: 'form-control' %>
+  </div>
+  <div class="form-group">
+    <%= f.submit "Generate Report", class: 'btn btn-primary' %>
+  </div>
+<% end %>
+

@@ -1,0 +1,15 @@
+<div class="row">
+  <div class="col-md-6">
+    <h1><%= @contact.url %></h1>
+     <div class="well report-description report-block">
+       <h3>Impression</h3>
+       <%= @contact.report.impression %><br/>
+     </div>
+    <div class="well report-block contact-info">
+      <h3>Moblle Friendly?</h3>
+        <%= @contact.report.mobile %><br/>
+      <h3>Speed</h3>  
+        <%= @contact.report.speed %><br/>
+    </div>  
+  </div>
+</div>

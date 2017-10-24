@@ -1,0 +1,32 @@
+<div class="col-md-6 col-md-offset-3">
+    <% flash.each do |key, value| %>
+      <%= content_tag :div,value, class: "alert alert-#{key}" %>
+    <%end%> 
+</div>
+<div class ="container-fluid">
+  <div class="row">
+    <div class="col-md-6">
+      <h1><%= @contact.url %></h1>
+       <div class="well report-description report-block">
+         <h3>Impression</h3>
+         <%= @impression %><br/>
+       </div>
+      <div class="well report-block contact-info">
+        <h3>Moblle Friendly?</h3>
+          <% if @mobile == 'no' %>
+            <h3> Your website is not mobile friendly! </h3>
+          <%else%>
+           <h3> Congratulations your website mobile friendly! </h3>
+          <%end%> 
+        <h3>Your website loaded in</h3>  
+          <%= @speed %> seconds <br/>
+          <% if @speed > 3 %>
+            <h3> Your website is too slow! </h3>
+          <%else%>
+           <h3> Congratulations your website is fast! </h3>
+          <%end%>
+      </div> 
+      <%= link_to 'Back', contacts_path , class: 'btn btn-primary ' %>
+    </div>
+  </div>
+</div>
