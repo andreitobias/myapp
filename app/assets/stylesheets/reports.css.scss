@@ -1,0 +1,26 @@
+// Place all the styles related to the Reports controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+/*Typography*/
+.report p {
+  color: #000;
+  text-align: left;
+}
+
+.report .jumbotron p{
+  text-align:center;
+}
+
+.report h2 {
+  font-weight:bold;
+}
+.report h3{
+  color: #27ae60;
+  padding-bottom: 1em;
+}
+/*Alignment*/
+/*Colors*/
+.white {
+  background-color: #fff !important;
+}

@@ -1,32 +1,71 @@
-<div class="col-md-6 col-md-offset-3">
+<dic class="report">
+  <div class="col-md-6 col-md-offset-3">
     <% flash.each do |key, value| %>
       <%= content_tag :div,value, class: "alert alert-#{key}" %>
     <%end%> 
-</div>
-<div class ="container-fluid">
-  <div class="row">
-    <div class="col-md-6">
-      <h1><%= @contact.url %></h1>
-       <div class="well report-description report-block">
-         <h3>Impression</h3>
-         <%= @impression %><br/>
-       </div>
-      <div class="well report-block contact-info">
-        <h3>Moblle Friendly?</h3>
-          <% if @mobile == 'no' %>
-            <h3> Your website is not mobile friendly! </h3>
-          <%else%>
-           <h3> Congratulations your website mobile friendly! </h3>
-          <%end%> 
-        <h3>Your website loaded in</h3>  
-          <%= @speed %> seconds <br/>
-          <% if @speed > 3 %>
-            <h3> Your website is too slow! </h3>
-          <%else%>
-           <h3> Congratulations your website is fast! </h3>
-          <%end%>
-      </div> 
-      <%= link_to 'Back', contacts_path , class: 'btn btn-primary ' %>
+  </div>
+  <div class ="container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <div class="jumbotron">
+          <h2 class="text-center"> <strong>Webstite Check-up For</strong> <br> <%= @contact.url %></h2>
+          <p>Created <%=Time.now.strftime("%d/%m/%Y") %></p>
+        </div>
+      </div>  
+    </div>
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+         <div class="well white">
+          <h1>The 7 Seconds Test</h1>
+          
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+          Beatae veniam repellendus facere voluptatibus explicabo sapiente asperiores quasi 
+          architecto accusantium non exercitationem facilis sequi natus officiis iste tempora, 
+          eaque, excepturi expedita.</p>
+            
+            <h3 class="bordered"> <i class="fa fa-search  fa-2x "></i> &nbsp; What is it?</h3>
+             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+          Beatae veniam repellendus facere voluptatibus explicabo sapiente asperiores quasi 
+          architecto accusantium non exercitationem facilis sequi natus officiis iste tempora, 
+          eaque, excepturi expedita.</p>
+            <h3 class="bordered"> <i class="fa fa-eye  fa-2x "></i> &nbsp; Who or what is about?</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+          Beatae veniam repellendus facere voluptatibus explicabo sapiente asperiores quasi 
+          architecto accusantium non exercitationem facilis sequi natus officiis iste tempora, 
+          eaque, excepturi expedita.</p>
+            <h3 class="bordered"><i class="fa fa-usd  fa-2x "></i> &nbsp; What's in it for me?</h3>
+           <%= @impression %><br/>
+         </div>
+        <div class="well white">
+          <span class="fa-stack fa-4x">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-mobile fa-stack-1x fa-inverse"></i>
+          </span>
+          <h2>Moblle Friendly?</h2>
+            <% if @mobile == 'no' %>
+              <p> Your website is not mobile friendly! </p>
+            <%else%>
+             <p> Congratulations your website mobile friendly! </p>
+            <%end%> 
+        </div>   
+        <div class="well white">
+          <span class="fa-stack fa-4x">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa fa-bolt fa-stack-1x fa-inverse"></i>
+          </span>
+          <h2>Your website loaded in</h2>  
+            <%= @speed %> seconds <br/>
+            <% if @speed > 3 %>
+              <p> Your website is too slow! </p>
+            <%else%>
+             <p> Congratulations your website is fast! </p>
+            <%end%>
+        </div>      
+        <%= link_to 'Back', contacts_path , class: 'btn btn-primary ' %>
+        <%= link_to 'Print', '#', :onclick => 'window.print();return false;', class: 'btn btn-danger '%>
+      </div>
     </div>
   </div>
-</div>
+</div>  
+  
+

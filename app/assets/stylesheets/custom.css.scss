@@ -49,31 +49,31 @@ margin-bottom: 2em;
 }
  
 /*Header*/
-.jumbotron{
+.landing .jumbotron{
   margin-top:11em;
   background-color: transparent !important;
    text-align: center !important;
 }
 
-.jumbotron h1,p{
+.landing .jumbotron h1,p{
   text-align: center;
   color:#fff;
 }
 
-.jumbotron h2 {
+.landing .jumbotron h2 {
    text-align: center;
   color:#fff !important;
 }
-.jumbotron h1{
+.landing .jumbotron h1{
   display:inline;
   color:#fff !important;
   text-transform: uppercase;
 
 }
-.jumbotron p{
+.landing .jumbotron p{
   margin: 2em 0 2em 0 !important;
 }
-.jumbotron h3 {
+.landing .jumbotron h3 {
     text-transform: uppercase;
     font-weight: 800;
     color:#fff;
@@ -342,7 +342,7 @@ form{
 .content{
     margin-left:-3%;
 }
-.left {
+.content .left {
   color: #e74c3c;
 }
 .inner{
@@ -452,7 +452,7 @@ ul{
        .show-me{
          display:none!important;
        }  
-      .jumbotron h1 {
+      .landing .jumbotron h1 {
         font-size: 40px !important;        	
         line-height: 1.1;
         font-weight: bold;
@@ -466,16 +466,16 @@ ul{
       .screen{
         display:none;
       }
-      .jumbotron h2 {
+      .landing .jumbotron h2 {
         font-size: 14px;
         line-height: 1.6;
       }
-      .jumbotron{
+      .landing .jumbotron{
           margin-top: 0;
           margin-bottom: 0 !important;
         }
         
-        .jumbotron h3 {
+        .landing .jumbotron h3 {
           font-size: 14px;
           font-weight: normal;
           line-height: 1.6;
@@ -509,7 +509,7 @@ ul{
           display:none;
         }
 
-        .left {
+        .content .left {
           position: relative;
           padding-top: 2em;
           z-index: 1;
@@ -523,7 +523,7 @@ ul{
         }
    }
    @media only screen and (min-width : 400px) {
-     .jumbotron {
+     .landing .jumbotron {
         margin-top: 3em;
      }
      .demo p {
@@ -549,24 +549,24 @@ ul{
           left: 48%;
         }
         
-        .jumbotron{
+        .landing .jumbotron{
           margin-top:0;
         }
         
-        .jumbotron h1 {
+        .landing .jumbotron h1 {
         	font-size:36px !important;
         	font-weight:bold;
         	line-height:48px;
         }
         
         
-        .jumbotron h2{
+        .landing .jumbotron h2{
           margin-top: 25px;
           font-size:19px;
           line-height:23px;
         }
         
-        .jumbotron h3 {
+        .landing .jumbotron h3 {
           font-size:19px;
         }    
 
@@ -609,7 +609,7 @@ ul{
           margin-top: 0em;
           width:100% !important;
         } 
-        .left {
+        .content .left {
           z-index: 1;
           font-size: 1em;
           margin-left: 43%;
@@ -625,7 +625,7 @@ ul{
     }
    
     @media only screen and (min-width : 1000px) {
-         .left {
+         .content .left {
           display:none;
         }
         .show-me {
@@ -634,20 +634,20 @@ ul{
         .icon{
           padding:0!important;
         }
-        .jumbotron h1{
+        .landing .jumbotron h1{
            font-size: 36px !important;
         }
-        .jumbotron h3 {
+        .landing .jumbotron h3 {
           line-height: 16px;
         }
-        .jumbotron h2 {
+        .landing .jumbotron h2 {
           font-size: 16px;
           line-height: 33px;
         }
-        .jumbotron h2{
+        .landing .jumbotron h2{
           margin-bottom:33px;
         }
-        .jumbotron{
+        .landing .jumbotron{
           margin-top: 5em;
         }
         
@@ -656,7 +656,7 @@ ul{
           width: 50%;
         }
         /*
-        .left {
+        .content .left {
           padding-left: 0;
           font-size: 2em;
           margin-top: 0px;
@@ -674,10 +674,10 @@ ul{
     }
     /* Large Devices, Wide Screens */
     @media only screen and (min-width : 1200px) {
-        .jumbotron{
+        .landing .jumbotron{
           margin-top:2em;
         }
-        .jumbotron h1 {
+        .landing .jumbotron h1 {
         	font-size:36px !important ;
         	line-height:35px;
         }
@@ -686,13 +686,13 @@ ul{
           bottom: -12em;
         }
         
-        .jumbotron h3{
+        .landing .jumbotron h3{
           font-size: 20px;
           line-height:52px;
           margin-bottom:0px;
 
         }
-        .jumbotron h2{
+        .landing .jumbotron h2{
           font-size: 20px !important; 
           margin-top: 20px;
           line-height:25px;
@@ -746,11 +746,11 @@ ul{
     
      /* Large Devices, Wide Screens */
     @media only screen and (min-width : 1300px) {
-        .jumbotron{
+        .landing .jumbotron{
           margin-top: 0em;
         }
         
-        .jumbotron h1 {
+        .landing .jumbotron h1 {
         	font-size: 37px !important ;
         	line-height:48px;
         }
@@ -758,13 +758,13 @@ ul{
         	font-size: 37px;
         	line-height:48px;
         }
-        .jumbotron h2{
+        .landing .jumbotron h2{
           font-size: 17px !important;
           margin-top: 24px;
           margin-bottom:7px;
         }
         
-        .jumbotron h3{
+        .landing .jumbotron h3{
           font-size: 17px;
           line-height:41px;
           margin-bottom:5px;
@@ -782,7 +782,7 @@ ul{
      
     /*Huge Devices*/
       @media only screen and (min-width : 1900px)   {
-        .jumbotron h1 {
+        .landing .jumbotron h1 {
           font-size: 54px !important;
          line-height: 56px;
         }
@@ -791,16 +791,16 @@ ul{
           font-size: 54px;
           line-height: 56px;
         }
-        .jumbotron h2 {
+        .landing .jumbotron h2 {
           margin-top:37px !important;
           font-size:23px !important;
           line-height:27px;
           margin-bottom:0px;
         }
-        .jumbotron h3 {
+        .landing .jumbotron h3 {
           font-size:23px !important;
         }  
-        .jumbotron{
+        .landing .jumbotron{
           margin-top: 10em;
         }
         .submission{
