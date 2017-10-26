@@ -1,4 +1,4 @@
-<dic class="report">
+<div class="report">
   <div class="col-md-6 col-md-offset-3">
     <% flash.each do |key, value| %>
       <%= content_tag :div,value, class: "alert alert-#{key}" %>
@@ -8,57 +8,57 @@
     <div class="row">
       <div class="col-md-8 col-md-offset-2">
         <div class="jumbotron">
-          <h2 class="text-center"> <strong>Webstite Check-up For</strong> <br> <%= @contact.url %></h2>
+          <h2 class="text-center"> Webstite Check-up For <br> <%= @contact.url %></h2>
           <p>Created <%=Time.now.strftime("%d/%m/%Y") %></p>
         </div>
       </div>  
     </div>
     <div class="row">
-      <div class="col-md-6 col-md-offset-3">
+      <div class="col-md-8 col-md-offset-2">
+        
+<!----------------------------- First Impression-------------------------------->         
          <div class="well white">
-          <h1>The 7 Seconds Test</h1>
+          <h1 class="bordered">The 7 Seconds Test</h1>
           
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
           Beatae veniam repellendus facere voluptatibus explicabo sapiente asperiores quasi 
           architecto accusantium non exercitationem facilis sequi natus officiis iste tempora, 
           eaque, excepturi expedita.</p>
             
-            <h3 class="bordered"> <i class="fa fa-search  fa-2x "></i> &nbsp; What is it?</h3>
-             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-          Beatae veniam repellendus facere voluptatibus explicabo sapiente asperiores quasi 
-          architecto accusantium non exercitationem facilis sequi natus officiis iste tempora, 
-          eaque, excepturi expedita.</p>
-            <h3 class="bordered"> <i class="fa fa-eye  fa-2x "></i> &nbsp; Who or what is about?</h3>
+            <h3 class="bordered"> <i class="fa fa-search  fa-2x "></i> &nbsp; "What is it?"</h3>
+             <p><%= @what %></p>
+            <h3 class="bordered"> <i class="fa fa-eye  fa-2x "></i> &nbsp; "Who or what is about?"</h3>
+            <p><%= @who %></p>
+            <h3 class="bordered"><i class="fa fa-usd  fa-2x "></i> &nbsp; "What's in it for me?"</h3>
+            <p><%= @wiifm %></p>
+            <h3 class="bordered"><i class="fa  fa-question-circle-o  fa-2x "></i> &nbsp; Ok, so what should I do?</h3>
+         </div>
+<!----------------------------- Mobile Friendly? -------------------------------->         
+        <div class="well white">
+          <h1 class="bordered">Is your website easy to read on mobile?</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Beatae veniam repellendus facere voluptatibus explicabo sapiente asperiores quasi 
+            architecto accusantium non exercitationem facilis sequi natus officiis iste tempora, 
+            eaque, excepturi expedita.</p>
+            
+            <% if @mobile == 'yes' %>
+             <%= render 'friendly' %>
+            <%else%>
+             <%= render 'notfriendly' %>
+            <%end%> 
+            
+        </div> 
+<!----------------------------- Speed -------------------------------->         
+        <div class="well white">
+          <h1 class="bordered">Is your website fast enough?</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
           Beatae veniam repellendus facere voluptatibus explicabo sapiente asperiores quasi 
           architecto accusantium non exercitationem facilis sequi natus officiis iste tempora, 
           eaque, excepturi expedita.</p>
-            <h3 class="bordered"><i class="fa fa-usd  fa-2x "></i> &nbsp; What's in it for me?</h3>
-           <%= @impression %><br/>
-         </div>
-        <div class="well white">
-          <span class="fa-stack fa-4x">
-            <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa fa-mobile fa-stack-1x fa-inverse"></i>
-          </span>
-          <h2>Moblle Friendly?</h2>
-            <% if @mobile == 'no' %>
-              <p> Your website is not mobile friendly! </p>
-            <%else%>
-             <p> Congratulations your website mobile friendly! </p>
-            <%end%> 
-        </div>   
-        <div class="well white">
-          <span class="fa-stack fa-4x">
-            <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa fa fa-bolt fa-stack-1x fa-inverse"></i>
-          </span>
-          <h2>Your website loaded in</h2>  
-            <%= @speed %> seconds <br/>
             <% if @speed > 3 %>
-              <p> Your website is too slow! </p>
+              <%= render 'slow' %>
             <%else%>
-             <p> Congratulations your website is fast! </p>
+             <%= render 'fast' %>
             <%end%>
         </div>      
         <%= link_to 'Back', contacts_path , class: 'btn btn-primary ' %>

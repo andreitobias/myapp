@@ -342,7 +342,7 @@ form{
 .content{
     margin-left:-3%;
 }
-.content .left {
+.left{
   color: #e74c3c;
 }
 .inner{
@@ -509,7 +509,7 @@ ul{
           display:none;
         }
 
-        .content .left {
+        .left{
           position: relative;
           padding-top: 2em;
           z-index: 1;
@@ -609,7 +609,7 @@ ul{
           margin-top: 0em;
           width:100% !important;
         } 
-        .content .left {
+        .left{
           z-index: 1;
           font-size: 1em;
           margin-left: 43%;
@@ -625,7 +625,7 @@ ul{
     }
    
     @media only screen and (min-width : 1000px) {
-         .content .left {
+         .left{
           display:none;
         }
         .show-me {
@@ -656,7 +656,7 @@ ul{
           width: 50%;
         }
         /*
-        .content .left {
+        .left{
           padding-left: 0;
           font-size: 2em;
           margin-top: 0px;

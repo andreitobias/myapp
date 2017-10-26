@@ -23,7 +23,9 @@ class ReportsController < ApplicationController
     # form where a Contact can fill out their own report.
     @contact = Contact.find( params[:contact_id] )
     @report = @contact.report
-    @impression = @contact.report.impression
+    @what = @contact.report.what
+    @who = @contact.report.who
+    @wiifm = @contact.report.wiifm
     @mobile = @contact.report.mobile
     @speed = @contact.report.speed
   end
@@ -58,7 +60,7 @@ class ReportsController < ApplicationController
 
   private
     def report_params
-      params.require(:report).permit(:impression, :mobile, :speed)
+      params.require(:report).permit(:what, :who, :wiifm, :mobile, :speed)
     end
   
     #def only_current_Contact

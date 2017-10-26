@@ -1,9 +1,12 @@
 <%= form_for @report, url: contact_report_path, html: { multipart: true } do |f| %>
   <div class="form-group">
   <h1>Impression </h1>  
-    <%= f.label :impression, "What is it? What is it about? What's in it for me? " %>
-    <%= f.text_area :impression, class: 'form-control' %>
-    
+    <%= f.label :what, "What is it?" %>
+    <%= f.text_area :what, class: 'form-control' %>
+    <%= f.label :who, "Who is it about?" %>
+    <%= f.text_area :who, class: 'form-control' %>
+    <%= f.label :wiifm, "What's in it for me? " %>
+    <%= f.text_area :wiifm, class: 'form-control' %>
   </div>
   <div class="form-group">
     <h1>Mobile-Responsive</h1>  

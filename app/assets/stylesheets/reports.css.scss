@@ -7,17 +7,32 @@
   color: #000;
   text-align: left;
 }
-
-.report .jumbotron p{
-  text-align:center;
+.report {
+  background: rgba(52, 152, 219, 0.17);;
 }
 
-.report h2 {
-  font-weight:bold;
+.report .jumbotron{
+  background: #de6161;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #2657eb, #de6161);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, rgba(40, 89, 235, 0.75), #de6161), url('3.jpg') no-repeat center center fixed; ; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+margin-bottom: 2em;
+ color: #fff;
+}
+
+.report .jumbotron p, h2{
+  text-align:center;
+  color: #fff;
+}
+
+.report h3, h1{
+   padding-bottom: 1em;
 }
 .report h3{
-  color: #27ae60;
-  padding-bottom: 1em;
+  color: #d35400;
 }
 /*Alignment*/
 /*Colors*/
