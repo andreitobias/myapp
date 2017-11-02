@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="reports.css">
+
 <div class="report">
   <div class="col-md-6 col-md-offset-3">
     <% flash.each do |key, value| %>
@@ -63,6 +65,7 @@
         </div>      
         <%= link_to 'Back', contacts_path , class: 'btn btn-primary ' %>
         <%= link_to 'Print', '#', :onclick => 'window.print();return false;', class: 'btn btn-danger '%>
+
       </div>
     </div>
   </div>
