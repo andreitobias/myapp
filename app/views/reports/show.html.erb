@@ -1,5 +1,4 @@
 <%= wicked_pdf_stylesheet_link_tag "reports.css" %>
-
 <div class="report">
   <div class="col-md-6 col-md-offset-3">
     <% flash.each do |key, value| %>
@@ -10,7 +9,7 @@
     <div class="row">
       <div class="col-md-8 col-md-offset-2">
         <div class="jumbotron">
-          <h2 class="text-center"> Webstite Check-up For <br> <%= @contact.url %></h2>
+          <h2 class="text-center"> Website Check-up For <br> <%= @contact.url %></h2>
           <p class="text-center">Created <%=Time.now.strftime("%d/%m/%Y") %></p>
         </div>
       </div>  
