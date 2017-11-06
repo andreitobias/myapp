@@ -37,8 +37,7 @@ gem 'bootstrap-sass', '~> 3.3.6'
 gem 'carrierwave', '~> 1.1.0'
 
 #Use PDFKit
-gem 'render_anywhere'
-gem 'pdfkit'
+gem 'wicked_pdf'
 gem 'wkhtmltopdf-binary'
 
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks

@@ -28,6 +28,13 @@ class ReportsController < ApplicationController
     @wiifm = @contact.report.wiifm
     @mobile = @contact.report.mobile
     @speed = @contact.report.speed
+    
+    respond_to do |format|
+      format.html
+      format.pdf do
+        render pdf: "report"   # Excluding ".pdf" extension.
+      end
+    end
   end
   
   def edit
