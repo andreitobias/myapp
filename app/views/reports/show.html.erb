@@ -1,5 +1,5 @@
-<%= wicked_pdf_stylesheet_link_tag "reports.css" %>
-<div class="report">
+
+<div id="report">
   <div class="col-md-6 col-md-offset-3">
     <% flash.each do |key, value| %>
       <%= content_tag :div,value, class: "alert alert-#{key}" %>
@@ -63,7 +63,6 @@
             <%end%>
         </div>      
         <%= link_to 'Back', contacts_path , class: 'btn btn-primary ' %>
-        <%= link_to 'Print', '#', :onclick => 'window.print();return false;', class: 'btn btn-danger '%>
 
       </div>
     </div>

@@ -10,4 +10,5 @@ class RegistrationsController < Devise::RegistrationsController
       redirect_to new_admin_session_path
     end  
   end
+  
 end
