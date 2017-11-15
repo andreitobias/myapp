@@ -38,7 +38,7 @@ gem 'carrierwave', '~> 1.1.0'
 
 #Use PDFKit
 gem 'wicked_pdf'
-gem 'wkhtmltopdf-binary'
+gem 'wkhtmltopdf-binary', '0.9.9'
 
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 gem 'turbolinks', '~> 5'

@@ -28,7 +28,7 @@
             <td><%= contact.url %></td>
             <td><%= link_to 'Generate', new_contact_report_path(contact) %></td>
             <%if contact.report.present?%>
-              <td><%= link_to 'View', contact_report_path(contact) %></td>
+              <td><%= link_to 'View', contact_report_path(contact, format: :pdf) %></td>
               <td><%= link_to 'Edit',  edit_contact_report_path(contact) %></td>
               <td><%= link_to 'Delete',  contact_report_path(contact), method: :delete %></td>
             <%else%>

@@ -32,7 +32,8 @@ class ReportsController < ApplicationController
     respond_to do |format|
       format.html
       format.pdf do
-        render pdf: "report"   # Excluding ".pdf" extension.
+        render pdf: "report",
+        disposition: 'attachment'# Excluding ".pdf" extension.
       end
     end
   end
