@@ -1,6 +1,11 @@
 .thankyou{
-  padding-top: 10em;
+  padding-top: 8em;
 }
+
+.thankyou h4{
+  line-height: 1.4;
+}
+
 
 .notify p {
   color: #000 !important;
@@ -36,9 +41,7 @@
   display: block;
   background: #fff;
   padding: 12px 18px;
-  max-width: 400px;
   margin: 0 auto;
-  cursor: pointer;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
@@ -50,8 +53,9 @@
   text-align: center;
 }
 
+
 .check h1 { 
-  color: #678361; 
+  color: #2c3e50; 
   
 }
 
@@ -80,8 +84,62 @@ text-align: center;
   
 }
 
+
 .notify .alerticon { 
   display: block;
   text-align: center;
   margin-bottom: 10px;
 }
+
+.notify .back{
+  width: 45%;
+  
+}
+
+.error .submission2{
+  float: right;
+  width: 45%;
+}
+
+.submission2 a {
+  color: #2c3e50;
+
+}
+
+.check .submission2:hover{
+  color: transparent!important;
+}
+.submission2 a:hover{
+  text-decoration:none !important;
+  color: #fff !important;
+}
+
+.notify .cta2{
+  margin-top: 2em;
+  margin-bottom: 0;
+}
+
+.back {
+  text-decoration:none!important;
+  text-transform: uppercase;
+}
+.back a{
+  text-decoration:none!important;
+  color:#000 !important;
+}
+.back:hover a{
+  text-decoration:none!important;
+}
+
+.back2 a {
+    color:#fff !important;
+}    
+.back2:hover a{
+    text-decoration:none!important;
+}
+.back2 {
+  text-transform: uppercase;
+  margin-top: 1em;
+  width: 100%;
+  
+} 

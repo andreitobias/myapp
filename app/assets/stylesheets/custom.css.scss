@@ -214,7 +214,7 @@ form{
   color:#fff !important;
 }
 
-
+/*Error & Thankyou pages*/
 .back {
   text-decoration:none!important;
   text-transform: uppercase;
@@ -226,6 +226,8 @@ form{
 .back:hover a{
   text-decoration:none!important;
 }
+
+
 /*Modal Contact Form Pop-up*/
 .modal-footer{
   border:0 !important;
@@ -352,38 +354,7 @@ form{
 .bordered {
   border-bottom: 1px solid #ecf0f1;
 }
-/*
-.stats{
-    text-align: center;
-    border-radius: 5%;
-    border: 1px solid transparent;
-    margin-left: 39%;
-    /* background: #2c3e50; 
-    box-shadow: 0 3px 28px 0 rgba(0,0,0,0.18);
-    color: #2c3e50;
-    font-weight: bold;
-    margin-top: 26%;
-    margin-bottom: 0%;
-    padding: 20px 20px 0 20px;
-}
-.stats h1 {
-  font-size: 15em;
-  font-weight: bold;
-}
 
-.stats h2 {
-  font-size: 25px;
-  line-height: 48px;
-  text-align: left;
-  padding-left: 1em;
-}
-.seconds h1{
-  font-size: 7em;
-}
-.grey{
-  background-color:  #ecf0f1;
-}
-*/
 
 .notify .back{
   width: 45%;
@@ -738,9 +709,7 @@ ul{
         .first{
             width:100% !important;
         } 
-        .text{
-          padding-top: 115px;
-        }
+        
         
     }
     
@@ -816,5 +785,8 @@ ul{
         }
         .content-header{
           padding: 0 9em 0 9em;
+        }
+        .text{
+          padding-top: 115px;
         }
     }
