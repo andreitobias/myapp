@@ -33,7 +33,9 @@ class ReportsController < ApplicationController
       format.html
       format.pdf do
         render pdf: "report",
-        disposition: 'attachment'# Excluding ".pdf" extension.
+        
+         background:  true
+        # Excluding ".pdf" extension.
       end
     end
   end

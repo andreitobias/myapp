@@ -22,7 +22,7 @@
       <div class="col-md-8 col-md-offset-2">
         
 <!----------------------------- First Impression-------------------------------->         
-         <div class="well white">
+         <div class="">
           <h1 class="bordered">The 7 Seconds Test</h1>
           
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
@@ -30,17 +30,21 @@
           architecto accusantium non exercitationem facilis sequi natus officiis iste tempora, 
           eaque, excepturi expedita.</p>
             
-            <h3 class="bordered"> <i class="fa fa-search  fa-2x "></i> &nbsp; "What is it?"</h3>
+            <h3 class="bordered"> <%= wicked_pdf_image_tag("search.png", size: "64x64")%> &nbsp; "What is it?"</h3>
              <p><%= @what %></p>
-            <h3 class="bordered"> <i class="fa fa-eye  fa-2x "></i> &nbsp; "Who or what is about?"</h3>
+            <h3 class="bordered"> <%= wicked_pdf_image_tag("eye.png", size: "64x64")%> &nbsp; "Who or what is about?"</h3>
             <p><%= @who %></p>
-            <h3 class="bordered"><i class="fa fa-usd  fa-2x "></i> &nbsp; "What's in it for me?"</h3>
+            <h3 class="bordered"><%= wicked_pdf_image_tag("dolar.png", size: "64x64")%>&nbsp; "What's in it for me?"</h3>
             <p><%= @wiifm %></p>
-            <h3 class="bordered"><i class="fa  fa-question-circle-o  fa-2x "></i> &nbsp; Ok, so what should I do?</h3>
+            <h3 class="bordered"><%= wicked_pdf_image_tag("chat.png", size: "64x64")%> &nbsp; Ok, so what should I do?</h3>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Beatae veniam repellendus facere voluptatibus explicabo sapiente asperiores quasi 
+            architecto accusantium non exercitationem facilis sequi natus officiis iste tempora, 
+            eaque, excepturi expedita. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis tenetur, quaerat? A ducimus nostrum incidunt rerum minus praesentium quaerat, maxime, dolor libero perspiciatis ea labore recusandae, suscipit sed iste consequatur!</p>
          </div>
 <!----------------------------- Mobile Friendly? -------------------------------->         
-        <div class="well white">
-          <h1 class="bordered">Is your website easy to read on mobile?</h1>
+        <div class="well white alwaysbreak">
+          <h1 class="bordered ">Is your website easy to read on mobile?</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
             Beatae veniam repellendus facere voluptatibus explicabo sapiente asperiores quasi 
             architecto accusantium non exercitationem facilis sequi natus officiis iste tempora, 
@@ -54,7 +58,7 @@
             
         </div> 
 <!----------------------------- Speed -------------------------------->         
-        <div class="well white">
+        <div class="well white alwaysbreak">
           <h1 class="bordered">Is your website fast enough?</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
           Beatae veniam repellendus facere voluptatibus explicabo sapiente asperiores quasi 
@@ -66,7 +70,7 @@
              <%= render 'fast' %>
             <%end%>
         </div>      
-        <%= link_to 'Back', contacts_path , class: 'btn btn-primary ', id: 'cmd' %>
+
       </div>
     </div>
   </div>

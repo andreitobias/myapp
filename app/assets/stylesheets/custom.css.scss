@@ -626,15 +626,7 @@ ul{
           margin-left: 25%;
           width: 50%;
         }
-        /*
-        .left{
-          padding-left: 0;
-          font-size: 2em;
-          margin-top: 0px;
-          margin: 0 0 0 23%;
-        }*/
-        
-        .demo a{
+          .demo a{
           position: absolute;
           left: 48.5%;
           bottom: -12em;
@@ -642,6 +634,9 @@ ul{
         .demo p {
           margin-left: 0;
         }
+        .text{
+        margin-top:1em;
+      } 
     }
     /* Large Devices, Wide Screens */
     @media only screen and (min-width : 1200px) {
@@ -746,6 +741,10 @@ ul{
             margin-top:2em;
         }
         
+      .text{
+        margin-top:3em;
+      }  
+        
     }
     
      
@@ -786,7 +785,5 @@ ul{
         .content-header{
           padding: 0 9em 0 9em;
         }
-        .text{
-          padding-top: 115px;
-        }
+       
     }

@@ -66,7 +66,7 @@
   float: left;
   width: 100%;
   margin-bottom: 10px;
-  padding: 20px 20px 0 20px;
+  /*padding: 20px 20px 0 20px;*/
 
 }
 .animation-element.slide-left.testimonial .left{
@@ -162,7 +162,7 @@
 @media only screen and (min-width : 640px) {
   .animation-element.slide-left.testimonial h4{
     font-size: 17px;
-    line-height: 36px;
+    line-height: 1.5;
   }
   .animation-element.slide-left.testimonial h1{
     font-size: 28px;
