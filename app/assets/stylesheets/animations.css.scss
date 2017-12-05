@@ -187,6 +187,7 @@
 @media only screen and (min-width : 1200px){
   .animation-element.slide-left.testimonial:nth-of-type(even), .animation-element.slide-left.testimonial:nth-of-type(odd){
     width: 100%;
+    padding: 0px 80px 0px 80px;
   }
   .animation-element.slide-left.testimonial h3{
     font-size: 36px;
