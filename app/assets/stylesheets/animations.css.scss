@@ -175,6 +175,14 @@
     margin: 0%;
     padding: 0;
   }
+  .animation-element.slide-left.testimonial h3{
+    font-size: 18px;
+  }
+  
+  .animation-element.slide-left.testimonial h4{
+    font-size: 16px;
+  }
+  
 }
 @media only screen and (min-width : 1200px){
   .animation-element.slide-left.testimonial:nth-of-type(even), .animation-element.slide-left.testimonial:nth-of-type(odd){
@@ -186,6 +194,14 @@
   }
   .animation-element.slide-left.testimonial h4{
     font-size: 20px;
+    line-height: 1.6;
+  }
+}
+
+@media only screen and (min-width : 1400px){
+  
+  .animation-element.slide-left.testimonial h4{
+    font-size: 18px;
     line-height: 1.6;
   }
 }

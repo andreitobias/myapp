@@ -557,7 +557,7 @@ ul{
           line-height: 48px;
         }   
         .content-header h4{
-          line-height: 36px;
+          line-height: 1.5;
           font-size: 17px;
         }
         
@@ -584,7 +584,6 @@ ul{
           z-index: 1;
           font-size: 1em;
           margin-left: 43%;
-          border-bottom: 0;
         }
     }
     @media only screen and (min-width : 760px) {
@@ -619,7 +618,7 @@ ul{
           margin-bottom:33px;
         }
         .landing .jumbotron{
-          margin-top: 5em;
+          margin-top: 2em;
         }
         
         .stats{
@@ -784,6 +783,11 @@ ul{
         }
         .content-header{
           padding: 0 9em 0 9em;
+        }
+        
+        .text{
+          padding: 40px 140px 0px 140px!important;
+          
         }
        
     }
