@@ -1,0 +1,14 @@
+/*Huge Devices*/
+        
+/* Small Devices, Mobile phones*/
+   @media only screen and (min-width : 320px){
+     .faq{
+          padding: 10px 0 10px 0;
+        }
+   }
+   
+     @media only screen and (min-width : 1900px)   {
+        .faq{
+          padding: 130px 0 130px 0;
+        }
+      }  

@@ -7,5 +7,6 @@ Rails.application.routes.draw do
   root 'pages#home'
   get '/thankyou', to: 'pages#thankyou'
   get '/error', to: 'pages#error'
+  get '/faq', to: 'pages#faq'
   resources :contacts
 end
