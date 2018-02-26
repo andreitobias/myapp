@@ -25,10 +25,13 @@
          <div class="">
           <h1 class="bordered">The 7 Seconds Test</h1>
           
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-          Beatae veniam repellendus facere voluptatibus explicabo sapiente asperiores quasi 
-          architecto accusantium non exercitationem facilis sequi natus officiis iste tempora, 
-          eaque, excepturi expedita.</p>
+          <p>Can I tell in less than 8 seconds what your webpage is, who it is about and most importantly
+          <b>what's in it for me?</b> Ehm.. 
+          could you while you visited <%= link_to 'our website', 'https://freecheckup.herokuapp.com/', target: "_blank"%>?<br><br>
+          Hopefully you did because we put some special tought into that!<br><br>
+          We live in the information age, and our attention span is a scarce resource - 
+          everyone is trying to get it and studies show that our attention span is around 8 seconds.
+          </p>
             
             <h3 class="bordered"> <%= wicked_pdf_image_tag("search.png", size: "64x64")%> &nbsp; "What is it?"</h3>
              <p><%= @what %></p>
@@ -69,7 +72,21 @@
             <%else%>
              <%= render 'fast' %>
             <%end%>
-        </div>      
+        </div>
+      <div class="well white alwaysbreak">
+        <h1 class="bordered">Resources:</h1>
+        <ul>
+          <li class="text-muted"><%=link_to'https://blog.kissmetrics.com/homepages-vs-landing-pages/'%></li>
+          <li class="text-muted"><%=link_to'https://blog.kissmetrics.com/conversion-rate-conundrum/'%></li>
+          <li class="text-muted"><%=link_to'https://www.go-globe.hk/blog/mobile-vs-desktop-internet-usage/'%></li>
+          <li class="text-muted"><%=link_to'https://blog.kissmetrics.com/loading-time/'%></li>
+          <li class="text-muted"><%=link_to'https://www.tributemedia.com/blog/you-have-7-seconds-what-a-visitor-should-know-about-your-website-within-moments'%></li>
+          <li class="text-muted"><%=link_to'https://www.crazyegg.com/blog/why-users-leave-a-website/'%></li>
+          <li class="text-muted"><%=link_to 'Eben Pagan' ,'https://ebenpagantraining.com/'%> from whom we initially got the idea </li>
+        </ul>
+      </div>
+
+
 
       </div>
     </div>
