@@ -30,7 +30,7 @@
           could you while you visited <%= link_to 'our website', 'https://freecheckup.herokuapp.com/', target: "_blank"%>?<br><br>
           Hopefully you did because we put some special tought into that!<br><br>
           We live in the information age, and our attention span is a scarce resource - 
-          everyone is trying to get it and studies show that our attention span is around 8 seconds.
+          everyone is trying to get it and studies show that our attention span is only around 8 seconds.
           </p>
             
             <h3 class="bordered"> <%= wicked_pdf_image_tag("search.png", size: "64x64")%> &nbsp; "What is it?"</h3>
@@ -40,19 +40,11 @@
             <h3 class="bordered"><%= wicked_pdf_image_tag("dolar.png", size: "64x64")%>&nbsp; "What's in it for me?"</h3>
             <p><%= @wiifm %></p>
             <h3 class="bordered"><%= wicked_pdf_image_tag("chat.png", size: "64x64")%> &nbsp; Ok, so what should I do?</h3>
-         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-            Beatae veniam repellendus facere voluptatibus explicabo sapiente asperiores quasi 
-            architecto accusantium non exercitationem facilis sequi natus officiis iste tempora, 
-            eaque, excepturi expedita. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis tenetur, quaerat? A ducimus nostrum incidunt rerum minus praesentium quaerat, maxime, dolor libero perspiciatis ea labore recusandae, suscipit sed iste consequatur!</p>
+            <p><%= @whattodo %></p>
          </div>
 <!----------------------------- Mobile Friendly? -------------------------------->         
         <div class="well white alwaysbreak">
           <h1 class="bordered ">Is your website easy to read on mobile?</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-            Beatae veniam repellendus facere voluptatibus explicabo sapiente asperiores quasi 
-            architecto accusantium non exercitationem facilis sequi natus officiis iste tempora, 
-            eaque, excepturi expedita.</p>
-            
             <% if @mobile == 'yes' %>
              <%= render 'friendly' %>
             <%else%>
@@ -63,17 +55,21 @@
 <!----------------------------- Speed -------------------------------->         
         <div class="well white alwaysbreak">
           <h1 class="bordered">Is your website fast enough?</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-          Beatae veniam repellendus facere voluptatibus explicabo sapiente asperiores quasi 
-          architecto accusantium non exercitationem facilis sequi natus officiis iste tempora, 
-          eaque, excepturi expedita.</p>
             <% if @speed > 3 %>
               <%= render 'slow' %>
             <%else%>
              <%= render 'fast' %>
             <%end%>
         </div>
-      <div class="well white alwaysbreak">
+      <div class="well white">
+        <h1 class="bordered">Found this at all useful?</h1>
+        <p>Do me a favour and let me know that you did by answering one question.
+        <br><br>
+        <b>What's your biggest frustration when it comes to your website in the context of your business?</b>
+        </p>
+        <%=link_to'CLICK TO ANSWER', 'https://www.surveymonkey.com/r/2Y7LH3G', target:"_blank", class:"btn btn-lg btn-danger btn-block"%>
+      </div>    
+      <div class="well white">
         <h1 class="bordered">Resources:</h1>
         <ul>
           <li class="text-muted"><%=link_to'https://blog.kissmetrics.com/homepages-vs-landing-pages/'%></li>

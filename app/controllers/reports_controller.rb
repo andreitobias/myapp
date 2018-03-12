@@ -28,6 +28,7 @@ class ReportsController < ApplicationController
     @wiifm = @contact.report.wiifm
     @mobile = @contact.report.mobile
     @speed = @contact.report.speed
+    @whattodo = @contact.report.whattodo
     
     respond_to do |format|
       format.html
@@ -70,7 +71,7 @@ class ReportsController < ApplicationController
 
   private
     def report_params
-      params.require(:report).permit(:what, :who, :wiifm, :mobile, :speed)
+      params.require(:report).permit(:what, :who, :wiifm, :whattodo, :mobile, :speed)
     end
   
     #def only_current_Contact
