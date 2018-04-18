@@ -11,4 +11,8 @@ class PagesController < ApplicationController
     @contact = Contact.new
   end
   
+  def landing2
+    @contact = Contact.new
+  end  
+  
 end

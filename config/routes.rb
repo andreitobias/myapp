@@ -8,5 +8,6 @@ Rails.application.routes.draw do
   get '/thankyou', to: 'pages#thankyou'
   get '/error', to: 'pages#error'
   get '/faq', to: 'pages#faq'
+   get '/landing2', to: 'pages#landing2'
   resources :contacts
 end

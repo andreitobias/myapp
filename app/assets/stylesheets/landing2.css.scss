@@ -1,0 +1,68 @@
+.fill-viewport {
+  height: 100vh;
+}
+.bg_image{
+ background: #de6161;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #2657eb, #de6161);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, rgba(40, 89, 235, 0.75), #de6161), image-url('6.jpg') no-repeat center center fixed; ; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.blue {
+  color: #3498db;
+}
+.green{
+  color: #27ae60;
+}
+.list {
+  list-style: none;
+  padding: 0;
+}
+.item {
+  padding-left: 1.3em;
+}
+.item:before {
+  content: "\f00c"; /* FontAwesome Unicode */
+  font-family: FontAwesome;
+  display: inline-block;
+  width: 1.3em;
+  color:#27ae60;
+  font-size: 20px;
+}  
+.large{
+  font-weight:bold;
+  line-height: 1.2;
+}
+.submit{
+  width:100%;
+  background-color: #8e44ad;
+  color: #fff;
+}
+.submit:hover{
+  background-color: #e74c3c;
+  color: #ffffff!important;
+  }
+@media screen and (max-width: 375px){
+  .btn-lg{
+    font-size:16px!important;
+  }  
+  .large{
+    font-size: 23px;
+  }
+  h4{
+    font-size: 13px!important;
+  }
+}
+
+@media screen and (min-width: 320px){
+  .margin{
+    margin-top: 2em;
+  }
+}
+@media screen and (min-width: 1024px){
+  .margin{
+    margin-top: 15%;
+  }  
+}

@@ -1,13 +1,6 @@
 <%= form_for @contact, html: { id: 'my_form' } do |f| %>
   <div class="col-md-4 col-md-offset-4">
-    <div class ="form-group">
-      <p class="text-muted"></p>
-      <div class="right-inner-addon ">
-        <button style="display:none" class="success btn btn-success"><span class="glyphicon glyphicon-ok"></span></button>
-        <button style="display:none" class="fail btn btn-warning"><span class="glyphicon glyphicon-flash"></span></button>
-      <%= f.text_field :name, class: 'form-control', placeholder: 'Name', required: true %>
-      </div>
-    </div>
+    
 
     <div class ="form-group">
       <p class="text-muted"></p>
@@ -23,12 +16,13 @@
       <div class="right-inner-addon ">
         <button style="display:none" class="success btn btn-success"><span class="glyphicon glyphicon-ok"></span></button>
         <button style="display:none" class="fail btn btn-warning"><span class="glyphicon glyphicon-flash"></span></button>
-      <%= f.url_field :url, class: 'form-control', placeholder: '(URL: http://mywebsite.com)', required: true %>
+      <%= f.url_field :url, class: 'form-control', placeholder: 'http://yourwebsite.com', required: true %>
       </div>
     </div>
 
        
-        <%= f.submit :'Analyze my website', class: "btn btn-primary btn-lg submission2"  %>
+        <%= f.submit :'Analyze my website', class: "btn btn-lg submit"  %>
+        <h6 class="text-center"><i class="fa fa-lock" aria-hidden="true"></i> We value your privacy and hate spammers. Unsubscribe anytime.</h6>  
   <% end %>
 </div>
 

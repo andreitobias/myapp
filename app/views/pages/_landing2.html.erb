@@ -1,18 +1,53 @@
-
 <div class="container-fluid bg_image">
-  
-      <section id = "section02 " class ="demo">
-        <div class ="jumbotron">
-          
-        </div>
+  <div class="row fill-viewport ">
+   <div class="col-xs-12 col-sm-7 col-sm-offset-3 col-md-6 col-md-offset-6 col-lg-4 ">
+    <div class="well margin">
+      <div class ="form-group">
+        <h4 class="text-muted text-center text-uppercase">Free Website Checkup</h4> 
+        <h1 class="large text-center blue text-bold">Get More Customers By Avoiding Critical Website Mistakes </h1>
         
-        <div class="col-md-6 col-md-offset-3">  
-              <%= render "contacts/form"%>
-               <!-- More Button -->
-            <section id="section02" class="demo">
-            	<a href="#section03"><span></span>More</a>
-            </section>
-         </div>    
+      <ul class="list">
+        <h4>In this <u>free custom report </u> you'll leran: </h3>
+        <br class ="hidden-xs">
+        <h4><li class="item">If YOUR website is communicating the right thing in 7 seconds and what to do about it if it's not.
+</li></h4>
+        <br class ="hidden-xs">
+        <h4><li class="item">How to avoid a simple 'rookie mistake' that could cost you more than half of potential customers. 
+        </li></h4>
+        <br class ="hidden-xs">
+        <h4><li class="item">If YOUR website is fast enough and why this is critical. </li></h4>
+      </ul> 
+          <br class ="hidden-xs">
+  </div>
+  
+<btn class="btn btn-lg submit" data-toggle="modal" data-target="#myModal">Yes, send me the free report!</btn>
+<h6 class="text-center"><i class="fa fa-lock" aria-hidden="true"></i> We value your privacy and hate spammers. Unsubscribe anytime</h6>    
+<!-- Modal -->
+<div class="modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h3 class="modal-title align-center text-bold"> <b>Learn if you are getting the most out of your website. Get a free custom checkup in 24 hours.
+        </b>
+        </h4>
+        
+      </div>
+      <div class="modal-body">
+        <%= render "contacts/form2"%>
+      </div>
+      <div class="modal-footer">
           
-    </section> 
-</div>    
+
+      </div>
+    </div>
+
+  </div>
+  
+</div>
+</div>  
+  
+ 
+
