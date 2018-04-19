@@ -1,7 +1,15 @@
 <%= form_for @contact, html: { id: 'my_form' } do |f| %>
   <div class="col-md-4 col-md-offset-4">
     
-
+    <div class ="form-group">
+      <p class="text-muted"></p>
+      <div class="right-inner-addon ">
+        <button style="display:none" class="success btn btn-success"><span class="glyphicon glyphicon-ok"></span></button>
+        <button style="display:none" class="fail btn btn-warning"><span class="glyphicon glyphicon-flash"></span></button>
+      <%= f.text_field :name, class: 'form-control', placeholder: 'Name', required: true %>
+      </div>
+    </div>
+    
     <div class ="form-group">
       <p class="text-muted"></p>
       <div class="right-inner-addon ">
