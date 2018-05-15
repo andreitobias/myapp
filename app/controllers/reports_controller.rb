@@ -78,6 +78,6 @@ class ReportsController < ApplicationController
       #@contact = Contact.find( params[:contact_id] )
       #redirect_to(root_url) unless @contact == current_Contact
     #end
-  end
+end
 
 
